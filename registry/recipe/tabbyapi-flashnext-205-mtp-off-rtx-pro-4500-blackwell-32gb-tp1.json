@@ -64,6 +64,13 @@
       "model_revision": "65c895314393431c09050b2e04e250836b3a6eb4",
       "weights_gb": 62.81
     },
+    "context_ledger": {
+      "ceiling_search_run": false,
+      "intended_context_tokens": 262144,
+      "native_ceiling_tokens": 262144,
+      "note": "Intended window is a starting point, not a demonstrated ceiling; no ceiling search has been run on this package. Brief target: 256k where supported, 128k at 8 GB. The budget decision authorised incomplete packages without redefining the accepted context target. Per ExperimentAudit context-clip audit 2026-09-20.",
+      "status": "full-brief-window"
+    },
     "deploy_image": {
       "cuda_floor_ge": "13.2",
       "digest": "sha256:d1e39d52e8af3b52c282280ec0265ea2676258d77533c7057a9eafce20a58789",

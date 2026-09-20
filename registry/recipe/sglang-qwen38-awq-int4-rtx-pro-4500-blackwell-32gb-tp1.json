@@ -64,6 +64,14 @@
       "model_revision": "63768c10df38c0395e12ef49edac1bd539eaeeea",
       "weights_gb": 21.04
     },
+    "context_ledger": {
+      "ceiling_search_run": false,
+      "intended_context_tokens": 40960,
+      "native_ceiling_tokens": 262144,
+      "note": "Intended window is a starting point, not a demonstrated ceiling; no ceiling search has been run on this package. Brief target: 256k where supported, 128k at 8 GB. The budget decision authorised incomplete packages without redefining the accepted context target. Per ExperimentAudit context-clip audit 2026-09-20.",
+      "reason_class": "inherited (40960 from a landed 24 GB recipe; full target 262144 native untested; A/B arm locked with PKG-23)",
+      "status": "target-unmet"
+    },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
       "digest": "sha256:d7035ee632474b524bf9184f159244320cc42ea8bfa51fdfa460bd0ead765522",
