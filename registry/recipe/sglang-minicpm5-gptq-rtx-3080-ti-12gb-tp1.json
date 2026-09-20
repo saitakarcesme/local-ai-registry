@@ -120,6 +120,7 @@
       "anon_layer_pull": "5/5 incl C1 full-fetch (small weights)",
       "confers_no_runtime_badge": true,
       "digest_verified": true,
+      "evidence": "evidence/omp-cheap-gpu-2026-09-18/cpu-proof/final-image-pull-audit.json (Main independent audit; sha256 in the sibling manifest.json)",
       "pilot_proof_run": "35513797144 (789a1eea full-warm pilot)",
       "readiness_contract": "OMP_SSH_FIRST + /opt/omp-acquire (sshd-first; blocking fail-closed acquire; .omp-ready pins the revision)",
       "type": "engine=proof (CPU-proof readiness discharge; NOT runtime inference)"
