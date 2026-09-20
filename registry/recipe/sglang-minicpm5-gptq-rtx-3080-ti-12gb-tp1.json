@@ -64,6 +64,24 @@
       "model_revision": "48d57c14fba6b1f86109e1a54fafb0848c163f04",
       "weights_gb": 2.11
     },
+    "calibration": {
+      "does_not_confer": "No validated badge. This recipe stays status=candidate. The canonical 12 GB RTX 3080 Ti target is UNTESTED; no 16 GB validated recipe is created. Full-window (131072) serving is not demonstrated.",
+      "evidence": "evidence/omp-cheap-gpu-2026-09-18/calibrations/rtx-2000-ada-16gb-minicpm5-2b-attempt3/ (sanitized, manifest + redaction ledger; raw remains local)",
+      "image_calibrated": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3080-ti-12gb@sha256:e54fe5ddd1365780ade3dffaa02ec8bc7a9f31ae5e79d79835e1dee7da313de8",
+      "image_repin_pending": "the recipe's draft_launch.image still pins the pre-fix digest; the atomic repin to the entrypoint-fixed set is coordinated with ImageDelivery and not applied here",
+      "kind": "retarget-short-capability",
+      "ran_on_hardware": "rtx-2000-ada-16gb (RETARGET; this package's canonical target is rtx-3080-ti-12gb)",
+      "recorded": "2026-09-20 per Main",
+      "result": {
+        "benchmark": "not-run (calibration)",
+        "capability_probes": "accepted (chat, reasoning, tools passed; vision false) — SHORT probes only (chat prompt 15 tokens)",
+        "context_tokens_configured": 131072,
+        "context_window_served": "NOT served or benchmarked; --context-length 131072 configured but only short probes exercised",
+        "pod": "5io846jrr6p0gn deleted, absence verified; billing not finalized",
+        "serve": "healthy (load ~402 s)"
+      },
+      "status": "honest-pending (not finalized/imported/billed; no acceptance-run sweep created)"
+    },
     "context_ledger": {
       "ceiling_search_run": false,
       "intended_context_tokens": 131072,
