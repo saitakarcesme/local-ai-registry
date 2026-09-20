@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 8000,
     "host_port": 8000,
-    "image": "ghcr.io/0xsero/deploy-vllm-minicpm5-gptq-rtx-3080-ti-12gb@sha256:71827c9653039e086ff787177b050f269f531c7873dc98c5b8c1799e986ea8ec",
+    "image": "ghcr.io/0xsero/deploy-vllm-minicpm5-gptq-rtx-3080-ti-12gb@sha256:9cc068cab274285ee32e1770f36baf0b2f5220e9b0e2bdaa75a22dd020c9a102",
     "ipc": "host",
     "kind": "docker",
     "mounts": [
@@ -23,7 +23,7 @@
     ],
     "synthesized": {
       "generated_at": "2026-09-20T00:00:00Z",
-      "image_provenance": "campaign omp-cheap-gpu-2026-09-18 owned deploy image (PKG-06/R06); build/config-source-verified, no verified inference",
+      "image_provenance": "campaign omp-cheap-gpu-2026-09-18 owned deploy image (PKG-06/R06); build/config-source-verified, no verified inference (label-fix rebuild digest)",
       "template": "owned-deploy-image-v1"
     }
   },
@@ -74,10 +74,11 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:71827c9653039e086ff787177b050f269f531c7873dc98c5b8c1799e986ea8ec",
+      "digest": "sha256:9cc068cab274285ee32e1770f36baf0b2f5220e9b0e2bdaa75a22dd020c9a102",
       "engine_base": "vllm-openai",
       "engine_base_digest": "sha256:1de88ff218282ce71da7811f62ea527556648e1ad05dd36e5fc82d0f9ff07424",
       "owner": "0xSero",
+      "rebuild_note": "digest updated 2026-09-20 after a label-fix rebuild so the OCI .config.Cmd (authoritative) matches the pinned_startup label; content-runnable unchanged; tools still engine-unsupported/null pending parser dump.",
       "status": "build/config-source-verified only (manifest-resolvable anonymously, HTTP 200, no layers pulled); NO verified inference; protocol-3.12 full anonymous amd64 layer pull outstanding"
     },
     "draft_launch_note": "UNVERIFIED draft. The owned deploy image bakes engine+pinned serve config into its ENTRYPOINT/CMD (effective command comes from the image config, NOT the stale DELIVERY-24 pinned_startup snippet). Weights are NOT baked: the ENTRYPOINT preflight self-fetches the pinned model revision into /opt/models/<name> (blocking, .omp-ready marker) at first launch; the ${MODEL_ROOT}->/opt/models mount is an optional persistent cache. No verified inference.",
