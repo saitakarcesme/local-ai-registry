@@ -1,0 +1,116 @@
+{
+  "capabilities": {
+    "chat": null,
+    "reasoning": null,
+    "tools": null,
+    "vision": null
+  },
+  "description": "2-05bpw-h4-ng4 on rtx-pro-4500-blackwell-32gb via tabbyapi (owned campaign deploy image, digest-pinned). CANDIDATE: build/config-source-verified only, no acceptance run; performance, capabilities and MTP are unverified. See metadata.mtp and metadata.deploy_image.",
+  "draft_launch": {
+    "accelerator_backend": "nvidia",
+    "arguments": [],
+    "container_port": 5000,
+    "host_port": 5000,
+    "image": "ghcr.io/0xsero/deploy-pkg-20-tabbyapi-flashnext-205@sha256:d1e39d52e8af3b52c282280ec0265ea2676258d77533c7057a9eafce20a58789",
+    "kind": "docker",
+    "mounts": [
+      {
+        "read_only": false,
+        "source": "${MODEL_ROOT}",
+        "target": "/opt/models"
+      }
+    ],
+    "synthesized": {
+      "generated_at": "2026-09-20T00:00:00Z",
+      "image_provenance": "campaign omp-cheap-gpu-2026-09-18 owned deploy image (PKG-20/R26); build/config-source-verified, no verified inference",
+      "template": "owned-deploy-image-v1"
+    }
+  },
+  "engine": {
+    "graph_mode": null,
+    "name": "tabbyapi",
+    "version": null
+  },
+  "facts": {},
+  "hardware_count": 1,
+  "hardware_id": "rtx-pro-4500-blackwell-32gb",
+  "id": "tabbyapi-flashnext-205-mtp-off-rtx-pro-4500-blackwell-32gb-tp1",
+  "launch": {
+    "container": {
+      "captured_at": "2026-09-20T00:00:00Z",
+      "compose_file": null,
+      "digest": null,
+      "image": null,
+      "reason": "reference-only-launch: authoritative launch is the owned deploy image's baked ENTRYPOINT (see draft_launch, unverified)",
+      "runtime": null,
+      "source": [
+        {
+          "captured_at": "2026-09-20T00:00:00Z",
+          "kind": "deploy-image",
+          "url": "https://ghcr.io/0xsero"
+        }
+      ],
+      "state": "none"
+    },
+    "kind": "reference",
+    "source": "campaign-omp-cheap-gpu-2026-09-18",
+    "url": "https://github.com/0xSero/local-ai-registry"
+  },
+  "metadata": {
+    "acquisition": {
+      "method": "ENTRYPOINT preflight snapshot_download of the pinned model revision into /opt/models (blocking, .omp-ready marker); needs outbound HuggingFace network + local disk at first launch; /opt/models volume optional cache",
+      "model_branch": "2.05bpw_h4_ng4",
+      "model_repo": "turboderp/Qwen3.8-Flash-Next-exl3",
+      "model_revision": "65c895314393431c09050b2e04e250836b3a6eb4",
+      "weights_gb": 62.81
+    },
+    "deploy_image": {
+      "cuda_floor_ge": "13.2",
+      "digest": "sha256:d1e39d52e8af3b52c282280ec0265ea2676258d77533c7057a9eafce20a58789",
+      "engine_base": "tabbyapi-cu13-upstream",
+      "engine_base_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+      "owner": "0xSero",
+      "status": "build/config-source-verified only (manifest-resolvable anonymously, HTTP 200, no layers pulled); NO verified inference; protocol-3.12 full anonymous amd64 layer pull outstanding"
+    },
+    "draft_launch_note": "UNVERIFIED draft. The owned deploy image bakes engine+pinned serve config into its ENTRYPOINT/CMD (effective command comes from the image config, NOT the stale DELIVERY-24 pinned_startup snippet). Weights are NOT baked: the ENTRYPOINT preflight self-fetches the pinned model revision into /opt/models/<name> (blocking, .omp-ready marker) at first launch; the ${MODEL_ROOT}->/opt/models mount is an optional persistent cache. No verified inference.",
+    "intended": {
+      "capabilities": {
+        "chat": true,
+        "reasoning": true,
+        "tools": null,
+        "vision": null
+      },
+      "context_tokens": 262144,
+      "pinned_startup_provenance": "tabbyapi config.yml identical to PKG-17 except draft_model.draft_mode removed; cpu_moe_split_experts 128, ngram_ram true, max_seq_len 262144, cache_size 262656, cache_mode Q4",
+      "quant_authoritative": "OCI label ai.omarchy.model.quant / config.json, not the repo or image name"
+    },
+    "mtp": {
+      "reason": "deliberate MTP-off control arm (draft_model disabled) for the A/B against its MTP-on sibling; unmeasured on this deploy image.",
+      "status": "control-off"
+    },
+    "provenance_note": "Owned-deploy-image candidate from campaign omp-cheap-gpu-2026-09-18 (DELIVERY-24 PKG-20 / R26). Legacy campaign details are provenance only; this record shares no validated badge or acceptance evidence with the corrected upstream-image recipes."
+  },
+  "model_instance_id": "turboderp-qwen3-8-flash-next-exl3--2-05bpw-h4-ng4",
+  "provenance": {
+    "captured_at": "2026-09-20T00:00:00Z",
+    "sources": [
+      {
+        "captured_at": "2026-09-20T00:00:00Z",
+        "kind": "normalized-recipe",
+        "url": "https://github.com/0xSero/local-ai-registry"
+      }
+    ]
+  },
+  "recipe_source": "0xsero",
+  "schema_version": "local-ai-registry/v1",
+  "serving": {
+    "context_verified": false,
+    "intended_context_tokens": 262144,
+    "kv_cache_tokens": null,
+    "max_concurrency": null,
+    "max_context_tokens": null,
+    "tensor_parallel": 1
+  },
+  "speed_sweep_ids": [],
+  "status": "candidate"
+}
