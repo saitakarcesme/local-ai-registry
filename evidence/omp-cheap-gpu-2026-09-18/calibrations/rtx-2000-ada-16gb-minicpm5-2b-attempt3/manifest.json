@@ -22,19 +22,19 @@
       "sha256": "e9c11bab071f132a2df91eae293e67166e53da41ec2a4adcad6dfbf3282bb7f6"
     },
     {
-      "bytes": 7527,
+      "bytes": 1200,
       "path": "console-extraction-capture.json",
-      "sha256": "b46bf43b0500a07a2135d77acd02886b5a27c8709afaebc4544a23d101667708"
+      "sha256": "19077a3745cddc699fcb5a8c4c7e89c81807616706a3b8dd82c196099b7baad3"
     },
     {
-      "bytes": 7250,
+      "bytes": 1169,
       "path": "console-extraction-progress.json",
-      "sha256": "69b8bbd93c73cd94268637a8dbdd9294960d4a1d07d2fe565c34c74d1c1cd3d3"
+      "sha256": "bfc3f2eeac254942bc96e02e8eabc0ab41c5d1972a503cacdea2932cff44d629"
     },
     {
-      "bytes": 8404,
+      "bytes": 1335,
       "path": "console-image-started.json",
-      "sha256": "3540b6279290ce4eae7381d340208c7b5dc029b46cb37a62ff31ee3adde8155c"
+      "sha256": "d04b4f5ed9263a93d77c2c4687b7db18401dbf80a791f269c08ce3f5cfd9b674"
     },
     {
       "bytes": 405,
@@ -72,6 +72,19 @@
   },
   "redaction_ledger": {
     "audit": "Scanned for private/public IPs, IP sockets, SSH host keys, PEM private keys, bearer/API tokens across all published files. Only sensitive value: the terminated pod's ephemeral public IP, redacted to [REDACTED-IP]. The 'Secret'/'API-key'/'Credentials' strings in the console captures are RunPod dashboard UI chrome and a descriptive sentence, not credential values; pod id, pod name and image digest are non-sensitive and left intact. The raw acquire.log (with the IP) is NOT published; the redacted acquire.log is.",
+    "derivations": [
+      {
+        "class": "RunPod-console DOM capture reduced to the pod-startup section",
+        "files": [
+          "console-image-started.json",
+          "console-extraction-progress.json",
+          "console-extraction-capture.json"
+        ],
+        "kept": "pod name/id, GPU, live utilization/memory/disk download+extraction progress, timestamps, image identity",
+        "method": "auditable derived copy per Main 2026-09-20; keys were already regex-redacted (rpa_/hf_) at capture; re-scanned for IP/token (none). Private original retained unchanged in inference-index.",
+        "omitted": "account UI chrome (MFA prompt, NPS survey, left-nav, Account/Templates/Secrets/Credentials/Settings/Billing/Cost centers/Refer&earn)"
+      }
+    ],
     "redactions": [
       {
         "class": "ephemeral pod public IP (now terminated)",
@@ -122,5 +135,5 @@
     "serve": "healthy",
     "validated_badge": false
   },
-  "total_bytes": 49282
+  "total_bytes": 29805
 }
