@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-09-18T19:13:23+00:00",
+  "driver": "TabbyAPI OpenAI-compatible streaming completions",
+  "endpoint": "<local-base-url>",
+  "model": "Qwen3.8-27B-EXL3-SC4bpw-H5",
+  "protocol": {
+    "api_completion_budget_reason": "engine reports the completion budget exactly, so the allocation budget equals the measurement horizon",
+    "api_completion_budget_tokens": 512,
+    "cache_state": "unverified; endpoint does not expose cached_tokens",
+    "concurrencies": [
+      1
+    ],
+    "cuda_graphs": "runtime-controlled; adapter does not disable graphs or request eager mode",
+    "measurement_output_tokens": 512,
+    "measurement_scope": "benchmark-only generation horizon; not a serving output cap",
+    "samples_per_concurrency": 2,
+    "streaming": "enabled",
+    "timeout_seconds_per_wave": 1800,
+    "tokenizer_verification": "TabbyAPI encode/decode/encode exact round-trip",
+    "total_context_tokens": [
+      262144
+    ]
+  },
+  "runs": [
+    {
+      "aggregate_decode_method": "unavailable: independent OpenAI streams expose no common-window token events",
+      "api_completion_budget_tokens": 512,
+      "cache_evidence": "unavailable: OpenAI usage omits cached token count",
+      "cache_state": "unverified",
+      "concurrency": 1,
+      "decode_tok_s_aggregate": null,
+      "decode_tok_s_per_stream": 38.74,
+      "elapsed_seconds": 548.155,
+      "finished_at": "2026-09-18T19:22:31+00:00",
+      "id": "t262144-c1-s1",
+      "measurement_output_tokens": 512,
+      "measurement_scope": "benchmark-only generation horizon; not a serving output cap",
+      "per_stream_decode_method": "median of TabbyAPI server-reported per-request rates",
+      "prefill_metric_method": "median tokenizer-verified prompt tokens divided by client-observed TTFT; cache state unverified",
+      "prefill_tok_s": 491.418,
+      "prompt_tokens": 261632,
+      "raw_file": "raw/t262144-c1-s1.jsonl",
+      "raw_sha256": "5bc98b64dc6697815a65c4dc162db967880e2bbecf61bfa10576637472b94e60",
+      "sample": 1,
+      "scenario": "cache-unverified",
+      "seed": 262163,
+      "status": "completed",
+      "stream_count": 1,
+      "total_context_tokens": 262144,
+      "ttft_ms_p50": 532401.954
+    },
+    {
+      "api_completion_budget_tokens": 512,
+      "cache_state": "unverified",
+      "concurrency": 1,
+      "id": "t262144-c1-s2",
+      "measurement_output_tokens": 512,
+      "measurement_scope": "benchmark-only generation horizon; not a serving output cap",
+      "prompt_tokens": 261632,
+      "sample": 2,
+      "scenario": "cache-unverified",
+      "seed": 262164,
+      "status": "planned",
+      "total_context_tokens": 262144
+    }
+  ],
+  "schema_version": "inference-index/tabby-sweep-v1",
+  "tokenizer": "turboderp/Qwen3.8-27B-exl3@4acd9ad5af224ec9e8815a54d71a033f378a7e9d",
+  "updated_at": "2026-09-18T19:22:31+00:00"
+}

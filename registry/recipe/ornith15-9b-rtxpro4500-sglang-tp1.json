@@ -5,7 +5,7 @@
     "tools": true,
     "vision": true
   },
-  "description": "Ornith-1.5-9B on one rtx-pro-4500-blackwell-32gb with SGLang 0.5.19, reasoning and vision at the model's full 131072-token window, and measured C1/C2/C4 decode acceptance at 32768 and 131072 prompt tokens. MTP was not enabled: the SGLang serve_argv carried no speculative/draft flags and the sweep recorded no draft acceptance, so no MTP is claimed.",
+  "description": "Ornith-1.5-9B on one rtx-pro-4500-blackwell-32gb with SGLang 0.5.19, reasoning and vision at the model's full 131072-token window. Chat, reasoning, tools and vision accepted. MTP not enabled in this run. Throughput figures are engine-reported and disputed (see metadata.measurements.dispute).",
   "engine": {
     "graph_mode": "full-and-piecewise",
     "name": "sglang",
@@ -192,13 +192,36 @@
           131072
         ]
       },
+      "dispute": {
+        "findings": [
+          "Throughput: decode_tok_s_per_stream and the derived metrics.peak_generation_tps are TabbyAPI server-reported per-request decode rates, not client-timed aggregate throughput (raw sweep rows carry decode_tok_s_aggregate=null). peak_generation_tps has been nulled in the speed-sweep; per-row values are retained verbatim as raw evidence.",
+          "Decode-only vs end-to-end: the reported per-stream decode rate excludes prefill/queue time. Client end-to-end throughput is far lower (Flash-Next 262144/C4: 512 tokens in 452.8 s = 1.13 tok/s versus the 22.95 tok/s per-stream headline).",
+          "Concurrency: the previous serving.max_concurrency was a queued request count, not a certified capability, so the claim is dropped (serving.max_concurrency=null). Only client-side timestamps are available: at the advertised long window the admitted request streams did not overlap in wall-clock (observed_client_stream_overlap=1) - identical prompt_time and completion_time across C1/C2/C4, TTFT and elapsed scaling linearly, aggregate tok/s flat (e.g. Flash-Next 262144 ~3.37 at C1 vs ~3.38 at C4) - while at 32768 up to 2 client streams overlapped. Client intervals can show queue/overlap behaviour but CANNOT certify the engine's internal GPU batch, which is unknown without engine-side instrumentation.",
+          "sweep_rows.accepted counts completed benchmark rows, not acceptance probes; it is not an acceptance verdict and must not be read next to metadata.acceptance.",
+          "MTP acceptance: acceptance_rate was engine-log-derived (drafted-vs-accepted speculative token counts parsed from server logs), not independently client-verified. Raw counts preserved under metadata.measurements.mtp.engine_reported; the derived rate is nulled.",
+          "Cache state: TabbyAPI sweep requests were cold - prompt_tokens_details.cached_tokens=0 in every raw record - so the raw 'cache_state: unverified' label understates what the data shows; no warm-cache measurement exists. This is a derived observation only: the immutable raw records are not edited, and any enrichment must come from an auditable separate transform, never a hand edit.",
+          "Latency: the SGLang sweep carries no latency data - all 21 rows have decode_tok_s_per_stream=null and ttft=null, only elapsed. Its cold/warm pairs differ 2-5x, so no Ornith row is comparable to a TabbyAPI cold-only row."
+        ],
+        "raised": "2026-09-20",
+        "raw_preserved": true,
+        "reviewer": "campaign performance-claims review",
+        "scope": [
+          "throughput",
+          "speculative-decoding-acceptance",
+          "concurrency-claim",
+          "long-context-reproducibility"
+        ],
+        "status": "disputed"
+      },
       "mtp": {
-        "available": false,
+        "enabled": false,
         "evidence": {
           "serve_argv": "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang/serve-argv.json",
           "sweep_rows": "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang/sweep/rows.jsonl"
         },
-        "reason": "MTP not enabled: the SGLang serve_argv carried no speculative/draft/eagle flags and the sweep rows.jsonl and manifest.json recorded no mtp/draft/spec field. Ornith-1.5-9B ships no MTP/draft head for SGLang, so no speculative acceptance was measured."
+        "reason": "MTP not enabled in this run: the SGLang serve_argv carried no speculative/draft/eagle flags and the sweep rows.jsonl/manifest.json recorded no mtp/draft/spec field. Whether Ornith-1.5-9B ships an MTP/draft head for SGLang was not tested; the earlier claim that it 'ships no MTP head' is not evidenced and is marked unverified.",
+        "status": "not-enabled",
+        "upstream_support": "unverified"
       },
       "mtp_acceptance": null,
       "peak_vram_gb": 28.85,
@@ -241,8 +264,15 @@
   "recipe_source": "0xsero",
   "schema_version": "local-ai-registry/v1",
   "serving": {
+    "concurrency_observed": {
+      "admission_behaviour": "not measurable - the SGLang sweep recorded no per-row latency (decode/ttft null), only elapsed",
+      "basis": "client-side per-stream first/last-token timestamps only, not engine instrumentation; DELIVERY-24.md protocol section 3.4 defines the engine-instrumented overlap measurement for re-measurement",
+      "dropped_claim": 4,
+      "engine_batch": "unknown - not certifiable without engine-side instrumentation",
+      "observed_client_stream_overlap": null
+    },
     "kv_cache_tokens": 131072,
-    "max_concurrency": 4,
+    "max_concurrency": null,
     "max_context_tokens": 131072,
     "tensor_parallel": 1
   },

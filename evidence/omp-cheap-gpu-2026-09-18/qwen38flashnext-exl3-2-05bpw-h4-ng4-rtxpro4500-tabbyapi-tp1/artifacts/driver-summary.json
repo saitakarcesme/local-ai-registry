@@ -1,0 +1,9 @@
+{
+  "artifacts": "/Users/sero/local-registry/inference-index/campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-flashnext-exl3",
+  "attempt": 1,
+  "elapsed_seconds": 4,
+  "slug": "rtx-pro-4500-blackwell-32gb-flashnext-exl3",
+  "steps": {
+    "probe": "ok"
+  }
+}

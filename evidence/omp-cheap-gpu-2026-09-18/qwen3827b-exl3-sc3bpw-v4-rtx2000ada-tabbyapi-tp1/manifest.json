@@ -1,0 +1,156 @@
+{
+  "file_count": 25,
+  "files": [
+    {
+      "bytes": 1772,
+      "path": "artifacts/acceptance.json",
+      "sha256": "a5f4f9b35ce88b534f97a4874d8cd8ce0643bc8d3136d868e57ff1f1a1ae67f8"
+    },
+    {
+      "bytes": 1862,
+      "path": "artifacts/acceptance.log",
+      "sha256": "a0aae51811d69972084cdf08e3f8038fffbbfbe146061ecd80edaa2ed16e4c8a"
+    },
+    {
+      "bytes": 6198,
+      "path": "artifacts/checksums.json",
+      "sha256": "225115c8b89e53b58200a273f49289c94b8a7a5a665844a13af4691c038fcb00"
+    },
+    {
+      "bytes": 1018,
+      "path": "artifacts/config.yml",
+      "sha256": "db211a21e52f3a409d6d54e71cf9e184c5ca6cc24ea097bf55c2133bb7d5a9a3"
+    },
+    {
+      "bytes": 244,
+      "path": "artifacts/driver-summary.json",
+      "sha256": "bab19f0d5844b6c7b2f976836e526d6d69ef14781efec9398eaee545ecdd403b"
+    },
+    {
+      "bytes": 2899,
+      "path": "artifacts/probe.json",
+      "sha256": "4382f398cd39bd431f8c8646cd95f3b230e07ca95ff8d549aa76ee051e6a185e"
+    },
+    {
+      "bytes": 20332,
+      "path": "artifacts/serve.log",
+      "sha256": "f3cd87007979cc931c2f375b30272533918789ef5d3161fe649d0083d9f37bcf"
+    },
+    {
+      "bytes": 2514,
+      "path": "artifacts/startup.log",
+      "sha256": "7761acce3b16b7b4159d277982e74acd350c2f56704c0f3c92c025a8c47e6912"
+    },
+    {
+      "bytes": 15919,
+      "path": "artifacts/sweep/manifest.json",
+      "sha256": "52c5f5460bad4f305b596d8d38c1ca63e5778f5eb30fcacfd98a337c62025344"
+    },
+    {
+      "bytes": 636,
+      "path": "artifacts/sweep/raw/t131072-c1-s1.jsonl",
+      "sha256": "162f168d1b0bf3c099926e86b338c3ed36fbfbad329731b8e14a8e304e959c68"
+    },
+    {
+      "bytes": 636,
+      "path": "artifacts/sweep/raw/t131072-c1-s2.jsonl",
+      "sha256": "5e33cd4e9dd2b8b91bef92a1a431a71feeac693a17bd980d0a72402d4f167b2b"
+    },
+    {
+      "bytes": 1277,
+      "path": "artifacts/sweep/raw/t131072-c2-s1.jsonl",
+      "sha256": "622ad9857dad61fa4ea6b2a6dd6ca93a95d628847b2bcdf3c286a5390cbc3421"
+    },
+    {
+      "bytes": 1273,
+      "path": "artifacts/sweep/raw/t131072-c2-s2.jsonl",
+      "sha256": "c6450d3e8d60c7bcc44c1efbf13c0969473ac88ab739c005539569808f23b667"
+    },
+    {
+      "bytes": 1915,
+      "path": "artifacts/sweep/raw/t131072-c4-s1.jsonl",
+      "sha256": "9bb4bd2db64c81c4b77554a7eecec566fa18c299d48721a0198ff998be24428f"
+    },
+    {
+      "bytes": 1914,
+      "path": "artifacts/sweep/raw/t131072-c4-s2.jsonl",
+      "sha256": "01aa5da3b6824b4ce7d4eac3d83307c4f415fbe33b83af0e9c920477b6565afc"
+    },
+    {
+      "bytes": 629,
+      "path": "artifacts/sweep/raw/t32768-c1-s1.jsonl",
+      "sha256": "1921cebbc303c36c59f9e97b85074c632edc10ed6118bc515edcc5efa2901bcf"
+    },
+    {
+      "bytes": 633,
+      "path": "artifacts/sweep/raw/t32768-c1-s2.jsonl",
+      "sha256": "2172bc423d00eb4e8f93e024595a9135ead138d3effb0ff889a0c7ed85fbf944"
+    },
+    {
+      "bytes": 1269,
+      "path": "artifacts/sweep/raw/t32768-c2-s1.jsonl",
+      "sha256": "7b4679eacc561fd54fce0b8c820a5f1f73164f96191f9182fb9d9bf551d43022"
+    },
+    {
+      "bytes": 1269,
+      "path": "artifacts/sweep/raw/t32768-c2-s2.jsonl",
+      "sha256": "1d17658aeac4879ef47836d3967a382834d686a4fbeede1bdabf51b203583f5e"
+    },
+    {
+      "bytes": 2538,
+      "path": "artifacts/sweep/raw/t32768-c4-s1.jsonl",
+      "sha256": "6109e6f55676dab7c231d6bdbba3959bacd6e983fc597da0466522d1a330ebc5"
+    },
+    {
+      "bytes": 2536,
+      "path": "artifacts/sweep/raw/t32768-c4-s2.jsonl",
+      "sha256": "a90d76b2a2480cab32fe251d3d2731259486638f1f8ff973a4a6b45d6a54c606"
+    },
+    {
+      "bytes": 12800,
+      "path": "artifacts/sweep/rows.jsonl",
+      "sha256": "f6e7a2a6e0c061478833d0174a2bd5d88db88a5acc2bf48bf35740cb241b0099"
+    },
+    {
+      "bytes": 673720,
+      "path": "artifacts/telemetry.csv",
+      "sha256": "383a1ae480876ca076ce572edbcae4de8f8bdcf8bc942b4d5f9d17ff68f34e47"
+    },
+    {
+      "bytes": 185,
+      "path": "artifacts/weights.json",
+      "sha256": "1dda16748e34c4a3940162e7b13bda7356437e453b2d9e8bce1ad28e25016dae"
+    },
+    {
+      "bytes": 942,
+      "path": "artifacts/weights.log",
+      "sha256": "9f2caba6c8dd932af6b5b5b0dac12b204cd9c666bcb6097cf2ac8c82290e35ef"
+    }
+  ],
+  "generated_at": "2026-09-20T09:43:16Z",
+  "image_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+  "label": "LEGACY / PROVISIONAL — pre-protocol-v2 campaign evidence, mirrored verbatim from an archived private repo. Benchmark metrics (throughput, MTP acceptance, concurrency) are DISPUTED and engine-reported/log-derived, not protocol-v2 verified. Functional acceptance (chat/reasoning/tools/vision) is the only verified capability claim.",
+  "model": {
+    "revision": "004a887127d8304ca2d5475d3a3c41f1761fdd27",
+    "served_name": "Qwen3.8-27B-EXL3-SC3bpw-H4-V4",
+    "slug": null
+  },
+  "provenance": {
+    "note": "Origin repository is archived and private; this mirror is the publicly-resolvable copy. Original raw remains local and intact; it is not modified by this mirror.",
+    "origin_commit": "1b2e3133d886cd076ce980a541825d45ba6bb8d7",
+    "origin_paths": [
+      "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-2000-ada-16gb-qwen38exl3-3bpw"
+    ],
+    "origin_repository": "https://github.com/0xSero/inference-index"
+  },
+  "recipe_id": "qwen3827b-exl3-sc3bpw-v4-rtx2000ada-tabbyapi-tp1",
+  "redaction_audit": "Auditable scan (private IPv4, IP sockets, RunPod proxy hosts, SSH host keys, PEM private keys, bearer/authorization, api/secret/access tokens, hf_/RunPod API keys). Only matches were the server bind address 0.0.0.0:5000 and localhost 127.0.0.1, which are not sensitive. No credentials, keys, tokens, or private endpoints found; content mirrored byte-for-byte with zero redactions.",
+  "redactions": [],
+  "schema": "inference-index-evidence/v0-provisional",
+  "test_status": {
+    "benchmark_metrics": "disputed",
+    "functional_acceptance": "accepted",
+    "protocol_v2_verified": false
+  },
+  "total_bytes": 756930
+}

@@ -1,0 +1,60 @@
+{
+  "capabilities": {
+    "chat": true,
+    "reasoning": true,
+    "tools": true,
+    "vision": true
+  },
+  "captured_at": "2026-09-19T19:34:32Z",
+  "context_tokens": 131072,
+  "failed_probes": [
+    "identity"
+  ],
+  "probes": {
+    "chat": {
+      "contains_pong": true,
+      "content": "pong",
+      "elapsed_seconds": 8.019,
+      "model": "Qwen3.8-Flash-Next-exl3-205bpw-h4-ng4",
+      "usage": null
+    },
+    "identity": {
+      "expected": "Qwen3.8-Flash-Next-EXL3-205bpw-H4",
+      "matched": false,
+      "served_ids": [
+        "Qwen3.8-Flash-Next-exl3-205bpw-h4-ng4"
+      ]
+    },
+    "reasoning": {
+      "answer_correct": true,
+      "content": "0.05",
+      "reasoning_chars": 192,
+      "reasoning_head": "We need answer user's classic bat and ball problem. Need final number only. Let's solve: ball x, bat x+1, total 2x+1=1.10 => 2x=0.10 => x=0.05. Answer number only: 0.05. Ensure no extra text.\n",
+      "separate_phase": true
+    },
+    "tools": {
+      "arguments": {
+        "city": "Lisbon"
+      },
+      "arguments_valid": true,
+      "follow_up_content": "\n\nThe weather in Lisbon is currently **21\u00b0C** with **clear skies**. \ud83c\udf24\ufe0f",
+      "follow_up_used_result": true,
+      "function_name": "get_weather",
+      "tool_call_present": true
+    },
+    "vision": {
+      "answered": true,
+      "answers_differ": true,
+      "blue_answer": "Blue",
+      "blue_names_colour": true,
+      "blue_prompt_tokens": null,
+      "blue_source": "budget",
+      "red_answer": "Red",
+      "red_names_colour": true,
+      "red_prompt_tokens": null,
+      "red_source": "budget"
+    }
+  },
+  "served_name": "Qwen3.8-Flash-Next-EXL3-205bpw-H4",
+  "verdict": "rejected"
+}

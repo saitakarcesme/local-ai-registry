@@ -1,0 +1,7 @@
+huggingface_hub 1.31.0
+LOCAL_DIR /opt/models/Qwen3.8-27B-EXL3-SC4bpw-H5
+BYTES 16735453380
+Warning: Permanently added '[[redacted-ip]]:32785' (ED25519) to the list of known hosts.
+
+Fetching 22 files:   0%|          | 0/22 [00:00<?, ?it/s]
+Fetching 22 files: 100%|██████████| 22/22 [00:00<00:00, 284.17it/s]

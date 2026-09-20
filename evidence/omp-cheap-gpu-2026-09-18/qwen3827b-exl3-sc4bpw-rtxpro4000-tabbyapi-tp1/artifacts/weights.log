@@ -1,0 +1,15 @@
+huggingface_hub 1.31.0
+LOCAL_DIR /opt/models/Qwen3.8-27B-EXL3-SC4bpw-H5
+BYTES 16735453379
+
+Fetching 22 files:   0%|          | 0/22 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 22 files:   5%|▍         | 1/22 [00:00<00:06,  3.47it/s]
+Fetching 22 files:  36%|███▋      | 8/22 [00:00<00:00, 17.42it/s]
+Fetching 22 files:  50%|█████     | 11/22 [00:00<00:00, 19.76it/s]
+Fetching 22 files:  64%|██████▎   | 14/22 [00:00<00:00, 19.33it/s]
+Fetching 22 files:  77%|███████▋  | 17/22 [00:01<00:00, 16.94it/s]
+Fetching 22 files:  86%|████████▋ | 19/22 [00:01<00:00, 10.04it/s]
+Fetching 22 files:  95%|█████████▌| 21/22 [00:15<00:01,  1.89s/it]
+Fetching 22 files: 100%|██████████| 22/22 [00:16<00:00,  1.68s/it]
+Fetching 22 files: 100%|██████████| 22/22 [00:16<00:00,  1.34it/s]

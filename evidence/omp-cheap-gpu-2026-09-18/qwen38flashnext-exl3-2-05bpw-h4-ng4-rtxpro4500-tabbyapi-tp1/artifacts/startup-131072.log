@@ -1,0 +1,40 @@
+ -- CPU split experts (worker, dynamic): model.language_model.layers.36.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.37.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.38.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.39.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.40.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.41.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.42.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.43.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.44.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.45.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.46.mlp [384..512) of 512
+ -- CPU split experts (worker, dynamic): model.language_model.layers.47.mlp [384..512) of 512
+Loading vision modules ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 30/30 0:00:00
+Loading model modules  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 53/53 0:00:00
+20:01:35.226 INFO:     Model loaded in 31.3 s
+
+20:01:35.236 WARNING:  Disabling authentication makes your instance vulnerable.
+                       Set the `disable_auth` flag to False in config.yml if you
+                       want to share this instance with others.
+20:01:35.237 WARNING:  With authentication disabled and `allowed_origins` left
+                       at ["*"], any website open in a browser on this machine
+                       can send requests to this instance and read the
+                       responses, including admin endpoints. Set
+                       `network.allowed_origins` to your own frontends (or [])
+                       unless you use a browser-based frontend that needs it.
+20:01:35.238 INFO:     Serving OAI API on http://0.0.0.0:5000 (docs at
+                       http://0.0.0.0:5000/redoc)
+20:01:50.324 INFO:     #3 chat/completions: 57 prompt tokens · temperature: 0,
+                       greedy (req), max_tokens: 64 (req)
+ -- CPU MoE worker started: 48 layers, avx2, 24 threads
+20:01:52.442 INFO:     #3 chat/completions: 27 tokens generated at 20.8 T/s ·
+                       prompt 57 tokens, none cached, 57 new in 0.81 s · first
+                       token 0.81 s, total 2.11 s
+20:01:52.445 INFO:     #4 chat/completions: 91 prompt tokens · temperature: 0,
+                       greedy (req), max_tokens: 1024 (req)
+20:01:57.328 INFO:     #4 chat/completions: 98 tokens generated at 22.9 T/s ·
+                       prompt 91 tokens, none cached, 91 new in 0.61 s · first
+                       token 0.61 s, total 4.88 s
+20:01:57.334 INFO:     #5 chat/completions: 318 prompt tokens · temperature: 0,
+                       greedy (req), max_tokens: 512 (req)

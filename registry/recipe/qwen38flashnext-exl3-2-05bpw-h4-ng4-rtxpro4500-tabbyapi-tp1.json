@@ -5,7 +5,7 @@
     "tools": true,
     "vision": true
   },
-  "description": "Qwen3.8-Flash-Next-EXL3-205bpw-H4 on one rtx-pro-4500-blackwell-32gb with TabbyAPI, ExLlamaV3, MTP drafting, reasoning and vision at the model's full 262144-token window, and measured C1/C2/C4 acceptance at 32768 and 262144 prompt tokens",
+  "description": "Qwen3.8-Flash-Next-EXL3-205bpw-H4 on one rtx-pro-4500-blackwell-32gb with TabbyAPI, ExLlamaV3, reasoning and vision at the model's full 262144-token window. Chat, reasoning, tools and vision accepted. MTP was configured but drafted zero speculative tokens (acceptance undefined). Throughput figures are engine-reported and disputed (see metadata.measurements.dispute).",
   "engine": {
     "graph_mode": "piecewise",
     "name": "tabbyapi",
@@ -195,12 +195,41 @@
           262144
         ]
       },
-      "mtp_acceptance": {
-        "acceptance_rate": null,
-        "accepted_prediction_tokens": 0,
-        "measured_streams": 28,
-        "rejected_prediction_tokens": 0
+      "dispute": {
+        "findings": [
+          "Throughput: decode_tok_s_per_stream and the derived metrics.peak_generation_tps are TabbyAPI server-reported per-request decode rates, not client-timed aggregate throughput (raw sweep rows carry decode_tok_s_aggregate=null). peak_generation_tps has been nulled in the speed-sweep; per-row values are retained verbatim as raw evidence.",
+          "Decode-only vs end-to-end: the reported per-stream decode rate excludes prefill/queue time. Client end-to-end throughput is far lower (Flash-Next 262144/C4: 512 tokens in 452.8 s = 1.13 tok/s versus the 22.95 tok/s per-stream headline).",
+          "Concurrency: the previous serving.max_concurrency was a queued request count, not a certified capability, so the claim is dropped (serving.max_concurrency=null). Only client-side timestamps are available: at the advertised long window the admitted request streams did not overlap in wall-clock (observed_client_stream_overlap=1) - identical prompt_time and completion_time across C1/C2/C4, TTFT and elapsed scaling linearly, aggregate tok/s flat (e.g. Flash-Next 262144 ~3.37 at C1 vs ~3.38 at C4) - while at 32768 up to 2 client streams overlapped. Client intervals can show queue/overlap behaviour but CANNOT certify the engine's internal GPU batch, which is unknown without engine-side instrumentation.",
+          "sweep_rows.accepted counts completed benchmark rows, not acceptance probes; it is not an acceptance verdict and must not be read next to metadata.acceptance.",
+          "MTP acceptance: acceptance_rate was engine-log-derived (drafted-vs-accepted speculative token counts parsed from server logs), not independently client-verified. Raw counts preserved under metadata.measurements.mtp.engine_reported; the derived rate is nulled.",
+          "Cache state: TabbyAPI sweep requests were cold - prompt_tokens_details.cached_tokens=0 in every raw record - so the raw 'cache_state: unverified' label understates what the data shows; no warm-cache measurement exists. This is a derived observation only: the immutable raw records are not edited, and any enrichment must come from an auditable separate transform, never a hand edit.",
+          "MTP: draft_mode: mtp was configured (asset config.yml) and the model ships an MTP head, but every one of the 28 measured streams reported accepted_prediction_tokens=0 and rejected_prediction_tokens=0. No speculative tokens were drafted; acceptance is undefined (0/0). Distinct from 'not enabled' and from 'upstream-unsupported'."
+        ],
+        "raised": "2026-09-20",
+        "raw_preserved": true,
+        "reviewer": "campaign performance-claims review",
+        "scope": [
+          "throughput",
+          "speculative-decoding-acceptance",
+          "concurrency-claim",
+          "long-context-reproducibility"
+        ],
+        "status": "disputed"
       },
+      "mtp": {
+        "enabled": true,
+        "engine_reported": {
+          "acceptance_rate": null,
+          "accepted_prediction_tokens": 0,
+          "measured_streams": 28,
+          "rejected_prediction_tokens": 0
+        },
+        "measurement_basis": "engine-log-derived",
+        "reason": "draft_mode: mtp was configured but every one of the 28 measured streams reported accepted_prediction_tokens=0 and rejected_prediction_tokens=0; acceptance is undefined (0/0). Distinct from 'not enabled' and 'upstream-unsupported'.",
+        "status": "no-speculative-tokens-observed",
+        "upstream_support": "model ships an MTP head; runtime drafting produced no tokens"
+      },
+      "mtp_acceptance": null,
       "peak_vram_gb": 31.28,
       "sweep_arms": [
         {
@@ -241,8 +270,18 @@
   "recipe_source": "0xsero",
   "schema_version": "local-ai-registry/v1",
   "serving": {
+    "concurrency_observed": {
+      "admission_behaviour": "client streams serialized at the advertised long window under the tested workload; a client-side observation, not an engine ceiling",
+      "basis": "client-side per-stream first/last-token timestamps only, not engine instrumentation; DELIVERY-24.md protocol section 3.4 defines the engine-instrumented overlap measurement for re-measurement",
+      "dropped_claim": 4,
+      "engine_batch": "unknown - not certifiable without engine-side instrumentation",
+      "observed_client_stream_overlap": {
+        "262144": 1,
+        "32768": 2
+      }
+    },
     "kv_cache_tokens": 262656,
-    "max_concurrency": 4,
+    "max_concurrency": null,
     "max_context_tokens": 262144,
     "tensor_parallel": 1
   },

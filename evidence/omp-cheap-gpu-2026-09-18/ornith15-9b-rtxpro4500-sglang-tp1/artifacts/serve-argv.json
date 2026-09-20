@@ -1,0 +1,21 @@
+[
+  "/opt/sglang/bin/python3",
+  "-m",
+  "sglang.launch_server",
+  "--model-path",
+  "/opt/models/Ornith-1.5-9B",
+  "--served-model-name",
+  "Ornith-1.5-9B",
+  "--host",
+  "[redacted-ip]",
+  "--port",
+  "30000",
+  "--context-length",
+  "131072",
+  "--mem-fraction-static",
+  "0.85",
+  "--tool-call-parser",
+  "qwen3_coder",
+  "--reasoning-parser",
+  "qwen3"
+]

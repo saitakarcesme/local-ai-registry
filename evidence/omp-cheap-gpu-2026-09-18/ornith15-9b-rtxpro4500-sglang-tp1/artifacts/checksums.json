@@ -1,0 +1,102 @@
+{
+  "copied_at": "2026-09-19T17:52:19.746126Z",
+  "files": [
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "acceptance.json",
+      "role": "other",
+      "sha256": "bfc54992e314a20b95d9b0aa9528cf5e337ea049652db86da23144c48a04ba4d",
+      "size_bytes": 1715
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "acceptance.log",
+      "role": "other",
+      "sha256": "d103ccf437885cdce761eb248faa377ae1e7fdbd5242b43af52a23fecc4dfeff",
+      "size_bytes": 1805
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "driver-summary.json",
+      "role": "run_manifest",
+      "sha256": "3641d5c4c160e22c5c56c190aa2949dce15f564fb32ceeb8ad1b330dbe318f4a",
+      "size_bytes": 293
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "probe.json",
+      "role": "other",
+      "sha256": "133e8ba22eafc806d8badae0d75b155bec90c1934663538a6217226f8431e3c7",
+      "size_bytes": 2029
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "serve-argv.json",
+      "role": "other",
+      "sha256": "b53662d9c5dadcb9a722b4bb133c28969b86e2a244a5e9181d84c743ee4a0a84",
+      "size_bytes": 360
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "startup.log",
+      "role": "startup_log",
+      "sha256": "f3d548d92d411f40db6f6c1a65279804e43dd7f6ec3f71657999b15c79b73778",
+      "size_bytes": 9172
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "sweep.log",
+      "role": "other",
+      "sha256": "ddb76af8b8892a241f67fbffa8c94f7f8e09b34190e68a5e1cf8d2a7faa8c219",
+      "size_bytes": 89
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "sweep/manifest.json",
+      "role": "other",
+      "sha256": "bfbeef709c476048aa923c1ceb316cc777eaf2a3b777a3af561b4ae9c242be0d",
+      "size_bytes": 40687
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "sweep/rows.jsonl",
+      "role": "benchmark",
+      "sha256": "caf58f037b73eb731882e17a2e2daf7bc2264e784d7fb313631c06745cdff701",
+      "size_bytes": 26376
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "sweep/warm-shared-corpus.json",
+      "role": "other",
+      "sha256": "ef0db8220920b237e0bbd9da7cb59996b56be50a3730cd70c3cf8e8c94f140e4",
+      "size_bytes": 4023
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "telemetry.csv",
+      "role": "telemetry",
+      "sha256": "86fdc40153e13ffb161d5955dfd7de0caeb9594136887dce4faf2b6c374b0999",
+      "size_bytes": 206216
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "weights.json",
+      "role": "other",
+      "sha256": "2e5a5a9660f885880cdf38ad9bd2a4843bc4b823ba4c5386fa86fe272edb2aea",
+      "size_bytes": 166
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+      "path": "weights.log",
+      "role": "other",
+      "sha256": "c13c9c3b1c6f93b1f450202167ae1d90d54205393f0a439b154c7c23114ee7b8",
+      "size_bytes": 313
+    }
+  ],
+  "hardware_slug": "rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+  "pairing_ids": [
+    "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang"
+  ],
+  "pod_id": "lftoaqfwjrb5n1",
+  "schema_version": "inference-index/artifact-copy-v1"
+}

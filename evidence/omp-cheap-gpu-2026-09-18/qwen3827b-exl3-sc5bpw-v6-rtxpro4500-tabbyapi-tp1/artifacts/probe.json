@@ -1,0 +1,52 @@
+{
+  "captured_at": "2026-09-19T05:14:40Z",
+  "engine": {
+    "cuda": "13.0",
+    "exllamav3": "unknown",
+    "torch": "2.11.0+cu130"
+  },
+  "engine_stderr": "Warning: Permanently added '[[redacted-ip]]:12376' (ED25519) to the list of known hosts.",
+  "failed_probes": [],
+  "gpu": "NVIDIA RTX PRO 4500 Blackwell, GPU-d2267dcd-a586-9757-38dc-c4978e39682a, 595.91.07, 32623 MiB, 12.0, 200.00 W",
+  "gpu_stderr": "Warning: Permanently added '[[redacted-ip]]:12376' (ED25519) to the list of known hosts.",
+  "host": {
+    "cpus": 112,
+    "disk_free_gb": 161.0,
+    "disk_total_gb": 161.1,
+    "ram_gb": 270.1
+  },
+  "host_stderr": "Warning: Permanently added '[[redacted-ip]]:12376' (ED25519) to the list of known hosts.",
+  "plan": {
+    "api_completion_budget_reason": "ExLlamaV3 1.5.0 reports the completion budget exactly, so the allocation budget equals the 512-token measurement horizon; the 1.4.2 audited protocol asked for one extra token because that version under-reported by one.",
+    "api_completion_budget_tokens": 512,
+    "cache_mode": "Q4",
+    "cache_size_tokens": 263168,
+    "capabilities": {
+      "chat": true,
+      "reasoning": true,
+      "tools": true,
+      "vision": true
+    },
+    "context_tokens": 262144,
+    "hardware_id": "rtx-pro-4500-blackwell-32gb",
+    "model_branch": "SC_5.00bpw_H6_V6",
+    "model_repo": "turboderp/Qwen3.8-27B-exl3",
+    "model_revision": "f33f26d929e2b20ef21361145d582f5239e3831f",
+    "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+    "remote_model_dir": "/opt/models/Qwen3.8-27B-EXL3-SC5bpw-H6-V6",
+    "served_name": "Qwen3.8-27B-EXL3-SC5bpw-H6-V6",
+    "slug": "rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+    "sweep_concurrencies": [
+      1,
+      2,
+      4
+    ],
+    "sweep_contexts": [
+      32768,
+      131072,
+      262144
+    ],
+    "sweep_timeout": 7200,
+    "tabby_config": "network:\n  host: [redacted-ip]\n  port: 5000\n  disable_auth: true\n  disable_fetch_requests: true\n  send_tracebacks: false\n  api_servers: [\"OAI\"]\n  sse_ping_interval: 15\n\nlogging:\n  log_prompt: false\n  log_generation_params: false\n  log_requests: false\n  log_chat_completion_requests: false\n\nmodel:\n  model_dir: /opt/models\n  inline_model_loading: false\n  use_dummy_models: false\n  model_name: Qwen3.8-27B-EXL3-SC5bpw-H6-V6\n  backend: exllamav3\n  max_seq_len: 262144\n  cache_size: 263168\n  cache_mode: Q4\n  tensor_parallel: false\n  gpu_split_auto: true\n  autosplit_reserve: [512]\n  chunk_size: 2048\n  output_chunking: true\n  max_batch_size: 4\n  vision: true\n  vision_offload: false\n  reasoning: true\n  start_in_reasoning: always\n  reasoning_start_token: \" thinking\"\n  reasoning_end_token: \"</think>\"\n  template_vars_default:\n    enable_thinking: true\n  tool_format: qwen3_coder\n\ndraft_model:\n  draft_mode: mtp\n\nsampling:\n  override_preset:\n\nmemory:\n  sysmem_recurrent_cache: 4096\n  sysmem_kv_cache: 0\n  cuda_malloc_async: true\n"
+  }
+}

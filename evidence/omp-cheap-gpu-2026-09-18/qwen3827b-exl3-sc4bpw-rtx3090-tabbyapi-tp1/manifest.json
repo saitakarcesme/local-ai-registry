@@ -1,0 +1,186 @@
+{
+  "file_count": 31,
+  "files": [
+    {
+      "bytes": 1753,
+      "path": "artifacts/acceptance.json",
+      "sha256": "9b4ff0d32dc4270611342bfeb73ee9bab03183801438353071444bc5a2da5869"
+    },
+    {
+      "bytes": 1843,
+      "path": "artifacts/acceptance.log",
+      "sha256": "d927e1116dd6f38afd22eb0caada65700658b74611aa77f724cace9d7a20a4e3"
+    },
+    {
+      "bytes": 7587,
+      "path": "artifacts/checksums.json",
+      "sha256": "632a295e774168cd54b52d58f6ca370b513649c00dae953e16828359c95cda0b"
+    },
+    {
+      "bytes": 1015,
+      "path": "artifacts/config.yml",
+      "sha256": "db046076df71167ef8ee789156118f2545477bd32924229b2e5d10374c771740"
+    },
+    {
+      "bytes": 257,
+      "path": "artifacts/driver-summary.json",
+      "sha256": "e5140443a6276c5cf067a64b5580f83cb0baa545bc87af77c497a788608953d7"
+    },
+    {
+      "bytes": 2897,
+      "path": "artifacts/probe.json",
+      "sha256": "5f9ea4b19bf9136a807ae274fd340361074e379e5e4ed72f891a940b74dc45c9"
+    },
+    {
+      "bytes": 27722,
+      "path": "artifacts/serve.log",
+      "sha256": "94a3c725adcc162a4b985adec78788d91b6e2f5473458267ab9148d72b49e997"
+    },
+    {
+      "bytes": 2512,
+      "path": "artifacts/startup.log",
+      "sha256": "a4953eb9720f61f2415ff52dfd46cf7fff4ed0b51da29c07ee89faf356d3709c"
+    },
+    {
+      "bytes": 23447,
+      "path": "artifacts/sweep/manifest.json",
+      "sha256": "39daf1bf745ee2787f427d42d12bdec40421bf6a2172cb04e687996186b55fc8"
+    },
+    {
+      "bytes": 637,
+      "path": "artifacts/sweep/raw/t131072-c1-s1.jsonl",
+      "sha256": "42b39eac6eebdcef04a82935fbaa67861a9a5ce6bb93709c028538caa2ba52c7"
+    },
+    {
+      "bytes": 636,
+      "path": "artifacts/sweep/raw/t131072-c1-s2.jsonl",
+      "sha256": "1f4bdddbac79be0c8524724208270df6f96b0e317c41e30eefa5f93c2912aa6e"
+    },
+    {
+      "bytes": 1272,
+      "path": "artifacts/sweep/raw/t131072-c2-s1.jsonl",
+      "sha256": "f691a31883d256f01c4636d758a17132e240baa01017947071659b32556785cb"
+    },
+    {
+      "bytes": 1269,
+      "path": "artifacts/sweep/raw/t131072-c2-s2.jsonl",
+      "sha256": "1e9c5d4249664bfc97f70bc611dda496f0ce124a3b21047a53a79f03c213eba4"
+    },
+    {
+      "bytes": 2544,
+      "path": "artifacts/sweep/raw/t131072-c4-s1.jsonl",
+      "sha256": "ccb5d8108ff71dcba647d15a44126a03afb6b5242e085057cd4f5f1b5711ce70"
+    },
+    {
+      "bytes": 2542,
+      "path": "artifacts/sweep/raw/t131072-c4-s2.jsonl",
+      "sha256": "94b55eae9e212f58bf08149bf6998582c0d701d35c3061537739fb6ca016b9bf"
+    },
+    {
+      "bytes": 634,
+      "path": "artifacts/sweep/raw/t262144-c1-s1.jsonl",
+      "sha256": "4069afe6829ff3ff9f925c8a7cdd97015d385a859a6ec256db5f26c2fb94ff0f"
+    },
+    {
+      "bytes": 635,
+      "path": "artifacts/sweep/raw/t262144-c1-s2.jsonl",
+      "sha256": "5dea81878bdf80871808e72f6aad40a9ffbafee550aa010606ec23e4c71d1679"
+    },
+    {
+      "bytes": 1276,
+      "path": "artifacts/sweep/raw/t262144-c2-s1.jsonl",
+      "sha256": "caefb1c55e5a65f0b5c4353aaecaffb18a897990f1fb7d56728c07170a2854e5"
+    },
+    {
+      "bytes": 1273,
+      "path": "artifacts/sweep/raw/t262144-c2-s2.jsonl",
+      "sha256": "7994c014cce9ee079d1efe9d2dc7989f9ff717e08772e72e9a324a7fd399ac57"
+    },
+    {
+      "bytes": 1274,
+      "path": "artifacts/sweep/raw/t262144-c4-s1.jsonl",
+      "sha256": "607aa3724b7012dd0b8698283726f827f99ad6aac3338fa11dd64a56afb24582"
+    },
+    {
+      "bytes": 1275,
+      "path": "artifacts/sweep/raw/t262144-c4-s2.jsonl",
+      "sha256": "a1b3cf34f7f71554fd196c567a8361e462c5fafe3cb51b8c8d2d34ef6618f331"
+    },
+    {
+      "bytes": 630,
+      "path": "artifacts/sweep/raw/t32768-c1-s1.jsonl",
+      "sha256": "547f9d57f56eac8d78b9dcde24616798847111b96d627419a83a55c42ecb6343"
+    },
+    {
+      "bytes": 631,
+      "path": "artifacts/sweep/raw/t32768-c1-s2.jsonl",
+      "sha256": "add590689a2d1611a82421ba392c102a5d5063427d1a6596ccb01d1ed54ed1c9"
+    },
+    {
+      "bytes": 1260,
+      "path": "artifacts/sweep/raw/t32768-c2-s1.jsonl",
+      "sha256": "3b890843c00db59808aece9c37e82c51d01a06cc2cc754958b38e8f0ca73dc09"
+    },
+    {
+      "bytes": 1259,
+      "path": "artifacts/sweep/raw/t32768-c2-s2.jsonl",
+      "sha256": "8296450aa065b0af7f4a474978e0ad94dd068a38861487466fdeb18609f69a55"
+    },
+    {
+      "bytes": 2529,
+      "path": "artifacts/sweep/raw/t32768-c4-s1.jsonl",
+      "sha256": "ae1e9c8dfe1ac99ec126cace3dc024bd638488de1684ab1c0e27596376abb1d4"
+    },
+    {
+      "bytes": 2531,
+      "path": "artifacts/sweep/raw/t32768-c4-s2.jsonl",
+      "sha256": "c3a2a93ce65454feb5920fc994903fe502726caaabf3029cd21f613b04948b38"
+    },
+    {
+      "bytes": 19351,
+      "path": "artifacts/sweep/rows.jsonl",
+      "sha256": "0e512d93ec81cb6e76e6b2a784a01e12da38c10ec1cfe8a29fb452c8f3b9595e"
+    },
+    {
+      "bytes": 683499,
+      "path": "artifacts/telemetry.csv",
+      "sha256": "09bde49d618e10ad71d8e614a05c9576f6e27fccf543bd2624287792b02b58a2"
+    },
+    {
+      "bytes": 182,
+      "path": "artifacts/weights.json",
+      "sha256": "da4730e5c8acb685c1bb610365f337db88db0aa0589adf2a13a99e6ce685983b"
+    },
+    {
+      "bytes": 1111,
+      "path": "artifacts/weights.log",
+      "sha256": "990c193cfd7d362c91fb24388394ba2470d2ca8f8baeedebb0aea8cb29f5534f"
+    }
+  ],
+  "generated_at": "2026-09-20T09:43:16Z",
+  "image_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+  "label": "LEGACY / PROVISIONAL — pre-protocol-v2 campaign evidence, mirrored verbatim from an archived private repo. Benchmark metrics (throughput, MTP acceptance, concurrency) are DISPUTED and engine-reported/log-derived, not protocol-v2 verified. Functional acceptance (chat/reasoning/tools/vision) is the only verified capability claim.",
+  "model": {
+    "revision": "4acd9ad5af224ec9e8815a54d71a033f378a7e9d",
+    "served_name": "Qwen3.8-27B-EXL3-SC4bpw-H5",
+    "slug": null
+  },
+  "provenance": {
+    "note": "Origin repository is archived and private; this mirror is the publicly-resolvable copy. Original raw remains local and intact; it is not modified by this mirror.",
+    "origin_commit": "d53096d1470aa99bd92868eaa44191c527b704a6",
+    "origin_paths": [
+      "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-3090-24gb-qwen38exl3-4bpw"
+    ],
+    "origin_repository": "https://github.com/0xSero/inference-index"
+  },
+  "recipe_id": "qwen3827b-exl3-sc4bpw-rtx3090-tabbyapi-tp1",
+  "redaction_audit": "Auditable scan (private IPv4, IP sockets, RunPod proxy hosts, SSH host keys, PEM private keys, bearer/authorization, api/secret/access tokens, hf_/RunPod API keys). Only matches were the server bind address 0.0.0.0:5000 and localhost 127.0.0.1, which are not sensitive. No credentials, keys, tokens, or private endpoints found; content mirrored byte-for-byte with zero redactions.",
+  "redactions": [],
+  "schema": "inference-index-evidence/v0-provisional",
+  "test_status": {
+    "benchmark_metrics": "disputed",
+    "functional_acceptance": "accepted",
+    "protocol_v2_verified": false
+  },
+  "total_bytes": 797283
+}

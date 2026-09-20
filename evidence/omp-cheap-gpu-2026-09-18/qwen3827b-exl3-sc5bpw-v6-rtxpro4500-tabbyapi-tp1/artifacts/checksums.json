@@ -1,0 +1,221 @@
+{
+  "copied_at": "2026-09-19T10:10:21.805411Z",
+  "files": [
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "acceptance.json",
+      "role": "other",
+      "sha256": "c10b955b300da0779fd61309fe72bc62ce0a3a7e7291205f895e881085aa3064",
+      "size_bytes": 1682
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "acceptance.log",
+      "role": "other",
+      "sha256": "45f3266c1743bff92dce80910764837a5e60d606f9f03a32d0fbded7248245dc",
+      "size_bytes": 1772
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "config.yml",
+      "role": "other",
+      "sha256": "ad7f5392c8f7e5d99402f2c8ad3a03bd9a01143a5ce04630114fd4047d393adb",
+      "size_bytes": 1019
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "driver-summary.json",
+      "role": "run_manifest",
+      "sha256": "8659475f57f0e90df28776a67a998f36bec79b49d6791afff2880755bb47648d",
+      "size_bytes": 358
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "probe.json",
+      "role": "other",
+      "sha256": "93406d445da0a9d2216cff2cbd13308fbbee3abf21d4ada1df9ac4c337dc87ac",
+      "size_bytes": 2958
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "serve.log",
+      "role": "other",
+      "sha256": "309cd8236aa4cff5f951ca5fd0f354adf3967268d3383ea467cf4e4362117c1d",
+      "size_bytes": 52679
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "startup.log",
+      "role": "startup_log",
+      "sha256": "809605ca8e8ccf1199e01f4708e019dc5d4ce38582b467b88d483d19c92a5d84",
+      "size_bytes": 2408
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/manifest.json",
+      "role": "other",
+      "sha256": "d72191188c5b7bf478174423fd411bc61282bf46ffc93f3bcc70acacd200fb8e",
+      "size_bytes": 23595
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c1-s1.jsonl",
+      "role": "raw",
+      "sha256": "fcc97a0f590e6bc12712eab13b3d66d1f2def65554929558f09de2e81dd05032",
+      "size_bytes": 636
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c1-s2.jsonl",
+      "role": "raw",
+      "sha256": "ddeab6b34ece8ebfd32a0d89ec9884c3229e78250fdd7023cd9393db3d8e394e",
+      "size_bytes": 635
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c2-s1.jsonl",
+      "role": "raw",
+      "sha256": "91d04c427861543b94aae7a38da99b927e38cd3416d43500738cbadd43dd1066",
+      "size_bytes": 1271
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c2-s2.jsonl",
+      "role": "raw",
+      "sha256": "a232ffb7cad2626fb0d5e3bba5674c419fe7573297fe67e1c8208341c50356db",
+      "size_bytes": 1271
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c4-s1.jsonl",
+      "role": "raw",
+      "sha256": "15dab21cf527d95fd33a6764ca214a1317b882f7ec00983a829a7fe9fc4d2f3d",
+      "size_bytes": 2542
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t131072-c4-s2.jsonl",
+      "role": "raw",
+      "sha256": "9506c5f7846d058f0ec5cb3c196cf45ba45d6f5c9cd6210407a485495aa4edf6",
+      "size_bytes": 2542
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c1-s1.jsonl",
+      "role": "raw",
+      "sha256": "2b63d676ee85d0c294f9d1e8a0a6e5da78a9b17a486770c2e288c8a0a7098779",
+      "size_bytes": 635
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c1-s2.jsonl",
+      "role": "raw",
+      "sha256": "c77a0427674d5626f8ccc16db518e68bc84e1ac8a2ec91cecc2302db69c549f8",
+      "size_bytes": 635
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c2-s1.jsonl",
+      "role": "raw",
+      "sha256": "09d0a7918ddec82069af2351885154e353a5450069ed5cb0f16504c033d3ef37",
+      "size_bytes": 1270
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c2-s2.jsonl",
+      "role": "raw",
+      "sha256": "b63586d7ea2af7c795227cb92fde91e820c897b95b0608b9ef2c0412befc5eef",
+      "size_bytes": 1269
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c4-s1.jsonl",
+      "role": "raw",
+      "sha256": "aac7cd36e3c681c3105fa43c2073bbddb0d907bf2813c1a1cf31ea325a3b27fa",
+      "size_bytes": 2549
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t262144-c4-s2.jsonl",
+      "role": "raw",
+      "sha256": "0a3cac0edaa992e7cc942de71a9211f64fa8b4d734c819c6f0059ed3577ff9af",
+      "size_bytes": 2544
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c1-s1.jsonl",
+      "role": "raw",
+      "sha256": "d19d56e4bbf2eb80605e31cf18397b3d88f4250b7d79f76de1c6492854da6cdd",
+      "size_bytes": 631
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c1-s2.jsonl",
+      "role": "raw",
+      "sha256": "5f0668355e7c442d94decdef3432a87e3b4da91810d9be8af2445204f4c058f0",
+      "size_bytes": 630
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c2-s1.jsonl",
+      "role": "raw",
+      "sha256": "6e29cd3316e7147b4e17a1859beea0395bd6f4553b96315438c73c0215b87ba6",
+      "size_bytes": 1257
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c2-s2.jsonl",
+      "role": "raw",
+      "sha256": "65d346b8ff731224b3445f6d6916e20f3b40e472889326346959fa815b2e7597",
+      "size_bytes": 1256
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c4-s1.jsonl",
+      "role": "raw",
+      "sha256": "7b501427204f61d448af73cc62e538727562cae03f0071fa26b82e249bfb7423",
+      "size_bytes": 2519
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/raw/t32768-c4-s2.jsonl",
+      "role": "raw",
+      "sha256": "a4b4f0e1f44c6ea902bf3c3f6b75488e528215ee650f2ce19343cc53514fc1b9",
+      "size_bytes": 2517
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "sweep/rows.jsonl",
+      "role": "benchmark",
+      "sha256": "4d389aca381c07722c70ffe961a6f33695f01f0026b59118ddb5649755b63439",
+      "size_bytes": 19496
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "telemetry.csv",
+      "role": "telemetry",
+      "sha256": "8aa4376bd6dcd120ac77e1b89ab0b13af59b3107ed80f3b7bb412129afe85fef",
+      "size_bytes": 944599
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "weights.json",
+      "role": "other",
+      "sha256": "47d48d166f5bb6036ea0c97371f687ea1c93e703570fc06c7e00f1cacfd5b1e8",
+      "size_bytes": 185
+    },
+    {
+      "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+      "path": "weights.log",
+      "role": "other",
+      "sha256": "a53fd2adccb9b9be86242b51b39142794453e423fdde4190c2de0b27f0607b27",
+      "size_bytes": 1342
+    }
+  ],
+  "hardware_slug": "rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+  "pairing_ids": [
+    "cheap-rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw"
+  ],
+  "pod_id": "95x8vny31j6mjj",
+  "schema_version": "inference-index/artifact-copy-v1"
+}

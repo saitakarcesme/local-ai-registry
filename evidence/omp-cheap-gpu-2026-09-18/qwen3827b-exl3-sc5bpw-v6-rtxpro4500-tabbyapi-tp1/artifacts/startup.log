@@ -1,0 +1,33 @@
+05:16:17.629 INFO:     Using config file /app/config.yml
+05:16:17.643 INFO:     Configured backend: cudaMallocAsync
+05:16:19.764 WARNING:  No sampler override preset is configured
+                       (sampling.override_preset), so sampling parameters have
+                       no fallback values. Requests that omit them run
+                       untruncated: temperature 1.0, top_k 0, top_p 1.0, min_p
+                       0. Set override_preset to safe_defaults unless this is
+                       intentional.
+05:16:19.768 INFO:     exllamav3 version: 1.5.0
+05:16:20.659 INFO:     Using main model MTP component for drafting
+05:16:20.660 INFO:     Disabling GPU split because one GPU is in use.
+05:16:20.660 INFO:     Context: max_seq_len 262,144 tokens (configured),
+                       cache_size 263,168 tokens
+05:16:20.693 INFO:     Using tool format: qwen3_coder
+05:16:20.694 INFO:     Using template "chat_template" for chat completions.
+05:16:24.500 INFO:     Loading model /opt/models/Qwen3.8-27B-EXL3-SC5bpw-H6-V6
+                       (manual GPU split)
+Loading vision modules ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 30/30 0:00:00
+Loading draft modules  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 3/3   0:00:00
+Loading model modules  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 67/67 0:00:00
+05:16:54.936 INFO:     Model loaded in 34.2 s
+
+05:16:54.936 WARNING:  Disabling authentication makes your instance vulnerable.
+                       Set the `disable_auth` flag to False in config.yml if you
+                       want to share this instance with others.
+05:16:54.937 WARNING:  With authentication disabled and `allowed_origins` left
+                       at ["*"], any website open in a browser on this machine
+                       can send requests to this instance and read the
+                       responses, including admin endpoints. Set
+                       `network.allowed_origins` to your own frontends (or [])
+                       unless you use a browser-based frontend that needs it.
+05:16:54.938 INFO:     Serving OAI API on http://[redacted-ip]:5000 (docs at
+                       http://[redacted-ip]:5000/redoc)

@@ -1,0 +1,8 @@
+{
+  "captured_at": "2026-09-19T20:20:00Z",
+  "tabbyapi_version": "0.0.1",
+  "tabbyapi_commit": "53da7919d4e45c63f4acbcbbc00cbe0f60a1ce65",
+  "image": "ghcr.io/theroyallab/tabbyapi:cu13@sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+  "exllamav3_version": "1.5.0",
+  "source": "tabbyAPI pyproject version 0.0.1 read on the pod; commit is the Dockerfile.cu13 revision the pinned digest builds"
+}

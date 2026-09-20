@@ -1,0 +1,186 @@
+{
+  "file_count": 31,
+  "files": [
+    {
+      "bytes": 1682,
+      "path": "artifacts/acceptance.json",
+      "sha256": "c10b955b300da0779fd61309fe72bc62ce0a3a7e7291205f895e881085aa3064"
+    },
+    {
+      "bytes": 1772,
+      "path": "artifacts/acceptance.log",
+      "sha256": "45f3266c1743bff92dce80910764837a5e60d606f9f03a32d0fbded7248245dc"
+    },
+    {
+      "bytes": 8035,
+      "path": "artifacts/checksums.json",
+      "sha256": "12aaa98edbeff421ccdc61844473438d25e96c38ea5430198671bdcfb314719a"
+    },
+    {
+      "bytes": 1019,
+      "path": "artifacts/config.yml",
+      "sha256": "ad7f5392c8f7e5d99402f2c8ad3a03bd9a01143a5ce04630114fd4047d393adb"
+    },
+    {
+      "bytes": 358,
+      "path": "artifacts/driver-summary.json",
+      "sha256": "8659475f57f0e90df28776a67a998f36bec79b49d6791afff2880755bb47648d"
+    },
+    {
+      "bytes": 2958,
+      "path": "artifacts/probe.json",
+      "sha256": "93406d445da0a9d2216cff2cbd13308fbbee3abf21d4ada1df9ac4c337dc87ac"
+    },
+    {
+      "bytes": 52679,
+      "path": "artifacts/serve.log",
+      "sha256": "309cd8236aa4cff5f951ca5fd0f354adf3967268d3383ea467cf4e4362117c1d"
+    },
+    {
+      "bytes": 2408,
+      "path": "artifacts/startup.log",
+      "sha256": "809605ca8e8ccf1199e01f4708e019dc5d4ce38582b467b88d483d19c92a5d84"
+    },
+    {
+      "bytes": 23595,
+      "path": "artifacts/sweep/manifest.json",
+      "sha256": "d72191188c5b7bf478174423fd411bc61282bf46ffc93f3bcc70acacd200fb8e"
+    },
+    {
+      "bytes": 636,
+      "path": "artifacts/sweep/raw/t131072-c1-s1.jsonl",
+      "sha256": "fcc97a0f590e6bc12712eab13b3d66d1f2def65554929558f09de2e81dd05032"
+    },
+    {
+      "bytes": 635,
+      "path": "artifacts/sweep/raw/t131072-c1-s2.jsonl",
+      "sha256": "ddeab6b34ece8ebfd32a0d89ec9884c3229e78250fdd7023cd9393db3d8e394e"
+    },
+    {
+      "bytes": 1271,
+      "path": "artifacts/sweep/raw/t131072-c2-s1.jsonl",
+      "sha256": "91d04c427861543b94aae7a38da99b927e38cd3416d43500738cbadd43dd1066"
+    },
+    {
+      "bytes": 1271,
+      "path": "artifacts/sweep/raw/t131072-c2-s2.jsonl",
+      "sha256": "a232ffb7cad2626fb0d5e3bba5674c419fe7573297fe67e1c8208341c50356db"
+    },
+    {
+      "bytes": 2542,
+      "path": "artifacts/sweep/raw/t131072-c4-s1.jsonl",
+      "sha256": "15dab21cf527d95fd33a6764ca214a1317b882f7ec00983a829a7fe9fc4d2f3d"
+    },
+    {
+      "bytes": 2542,
+      "path": "artifacts/sweep/raw/t131072-c4-s2.jsonl",
+      "sha256": "9506c5f7846d058f0ec5cb3c196cf45ba45d6f5c9cd6210407a485495aa4edf6"
+    },
+    {
+      "bytes": 635,
+      "path": "artifacts/sweep/raw/t262144-c1-s1.jsonl",
+      "sha256": "2b63d676ee85d0c294f9d1e8a0a6e5da78a9b17a486770c2e288c8a0a7098779"
+    },
+    {
+      "bytes": 635,
+      "path": "artifacts/sweep/raw/t262144-c1-s2.jsonl",
+      "sha256": "c77a0427674d5626f8ccc16db518e68bc84e1ac8a2ec91cecc2302db69c549f8"
+    },
+    {
+      "bytes": 1270,
+      "path": "artifacts/sweep/raw/t262144-c2-s1.jsonl",
+      "sha256": "09d0a7918ddec82069af2351885154e353a5450069ed5cb0f16504c033d3ef37"
+    },
+    {
+      "bytes": 1269,
+      "path": "artifacts/sweep/raw/t262144-c2-s2.jsonl",
+      "sha256": "b63586d7ea2af7c795227cb92fde91e820c897b95b0608b9ef2c0412befc5eef"
+    },
+    {
+      "bytes": 2549,
+      "path": "artifacts/sweep/raw/t262144-c4-s1.jsonl",
+      "sha256": "aac7cd36e3c681c3105fa43c2073bbddb0d907bf2813c1a1cf31ea325a3b27fa"
+    },
+    {
+      "bytes": 2544,
+      "path": "artifacts/sweep/raw/t262144-c4-s2.jsonl",
+      "sha256": "0a3cac0edaa992e7cc942de71a9211f64fa8b4d734c819c6f0059ed3577ff9af"
+    },
+    {
+      "bytes": 631,
+      "path": "artifacts/sweep/raw/t32768-c1-s1.jsonl",
+      "sha256": "d19d56e4bbf2eb80605e31cf18397b3d88f4250b7d79f76de1c6492854da6cdd"
+    },
+    {
+      "bytes": 630,
+      "path": "artifacts/sweep/raw/t32768-c1-s2.jsonl",
+      "sha256": "5f0668355e7c442d94decdef3432a87e3b4da91810d9be8af2445204f4c058f0"
+    },
+    {
+      "bytes": 1257,
+      "path": "artifacts/sweep/raw/t32768-c2-s1.jsonl",
+      "sha256": "6e29cd3316e7147b4e17a1859beea0395bd6f4553b96315438c73c0215b87ba6"
+    },
+    {
+      "bytes": 1256,
+      "path": "artifacts/sweep/raw/t32768-c2-s2.jsonl",
+      "sha256": "65d346b8ff731224b3445f6d6916e20f3b40e472889326346959fa815b2e7597"
+    },
+    {
+      "bytes": 2519,
+      "path": "artifacts/sweep/raw/t32768-c4-s1.jsonl",
+      "sha256": "7b501427204f61d448af73cc62e538727562cae03f0071fa26b82e249bfb7423"
+    },
+    {
+      "bytes": 2517,
+      "path": "artifacts/sweep/raw/t32768-c4-s2.jsonl",
+      "sha256": "a4b4f0e1f44c6ea902bf3c3f6b75488e528215ee650f2ce19343cc53514fc1b9"
+    },
+    {
+      "bytes": 19496,
+      "path": "artifacts/sweep/rows.jsonl",
+      "sha256": "4d389aca381c07722c70ffe961a6f33695f01f0026b59118ddb5649755b63439"
+    },
+    {
+      "bytes": 944599,
+      "path": "artifacts/telemetry.csv",
+      "sha256": "8aa4376bd6dcd120ac77e1b89ab0b13af59b3107ed80f3b7bb412129afe85fef"
+    },
+    {
+      "bytes": 185,
+      "path": "artifacts/weights.json",
+      "sha256": "47d48d166f5bb6036ea0c97371f687ea1c93e703570fc06c7e00f1cacfd5b1e8"
+    },
+    {
+      "bytes": 1342,
+      "path": "artifacts/weights.log",
+      "sha256": "a53fd2adccb9b9be86242b51b39142794453e423fdde4190c2de0b27f0607b27"
+    }
+  ],
+  "generated_at": "2026-09-20T09:43:16Z",
+  "image_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+  "label": "LEGACY / PROVISIONAL — pre-protocol-v2 campaign evidence, mirrored verbatim from an archived private repo. Benchmark metrics (throughput, MTP acceptance, concurrency) are DISPUTED and engine-reported/log-derived, not protocol-v2 verified. Functional acceptance (chat/reasoning/tools/vision) is the only verified capability claim.",
+  "model": {
+    "revision": "f33f26d929e2b20ef21361145d582f5239e3831f",
+    "served_name": "Qwen3.8-27B-EXL3-SC5bpw-H6-V6",
+    "slug": null
+  },
+  "provenance": {
+    "note": "Origin repository is archived and private; this mirror is the publicly-resolvable copy. Original raw remains local and intact; it is not modified by this mirror.",
+    "origin_commit": "14910d1f2e32360ce27a191d5ff6faffe6e0c8db",
+    "origin_paths": [
+      "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw"
+    ],
+    "origin_repository": "https://github.com/0xSero/inference-index"
+  },
+  "recipe_id": "qwen3827b-exl3-sc5bpw-v6-rtxpro4500-tabbyapi-tp1",
+  "redaction_audit": "Auditable scan (private IPv4, IP sockets, RunPod proxy hosts, SSH host keys, PEM private keys, bearer/authorization, api/secret/access tokens, hf_/RunPod API keys). Only matches were the server bind address 0.0.0.0:5000 and localhost 127.0.0.1, which are not sensitive. No credentials, keys, tokens, or private endpoints found; content mirrored byte-for-byte with zero redactions.",
+  "redactions": [],
+  "schema": "inference-index-evidence/v0-provisional",
+  "test_status": {
+    "benchmark_metrics": "disputed",
+    "functional_acceptance": "accepted",
+    "protocol_v2_verified": false
+  },
+  "total_bytes": 1086737
+}

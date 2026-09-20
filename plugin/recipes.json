@@ -21,7 +21,7 @@
       "workflow": "https://github.com/0xSero/local-ai-images/actions/runs/35164534977"
     }
   },
-  "generatedAt": "2026-09-19T21:04:03Z",
+  "generatedAt": "2026-09-20T09:45:00Z",
   "hardware": {
     "intel-arc-pro-b70-32gb": {
       "match": {
@@ -675,12 +675,12 @@
             "sizeGb": 12.12
           },
           "serving": {
-            "concurrency": 2,
+            "concurrency": 0,
             "ctxTokens": 131072,
             "kvTokens": 132096
           },
           "speed": {
-            "tps": 28
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-19T02:33:27Z",
@@ -2266,12 +2266,12 @@
             "sizeGb": 15.59
           },
           "serving": {
-            "concurrency": 2,
+            "concurrency": 0,
             "ctxTokens": 262144,
             "kvTokens": 263168
           },
           "speed": {
-            "tps": 41
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-18T21:49:18Z",
@@ -4614,12 +4614,12 @@
             "sizeGb": 15.59
           },
           "serving": {
-            "concurrency": 1,
-            "ctxTokens": 262144,
+            "concurrency": 0,
+            "ctxTokens": 131072,
             "kvTokens": 263168
           },
           "speed": {
-            "tps": 89
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-19T12:19:04Z",
@@ -5901,12 +5901,12 @@
             "sizeGb": 15.59
           },
           "serving": {
-            "concurrency": 1,
-            "ctxTokens": 262144,
+            "concurrency": 0,
+            "ctxTokens": 131072,
             "kvTokens": 263168
           },
           "speed": {
-            "tps": 76
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-18T19:13:05Z",
@@ -6319,7 +6319,7 @@
             "sizeGb": 17.99
           },
           "serving": {
-            "concurrency": 4,
+            "concurrency": 0,
             "ctxTokens": 131072,
             "kvTokens": 131072
           },
@@ -6391,12 +6391,12 @@
             "sizeGb": 18.24
           },
           "serving": {
-            "concurrency": 4,
+            "concurrency": 0,
             "ctxTokens": 262144,
             "kvTokens": 263168
           },
           "speed": {
-            "tps": 95
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-19T05:17:23Z",
@@ -6463,12 +6463,12 @@
             "sizeGb": 58.5
           },
           "serving": {
-            "concurrency": 4,
+            "concurrency": 0,
             "ctxTokens": 262144,
             "kvTokens": 262656
           },
           "speed": {
-            "tps": 23
+            "tps": 0
           },
           "validated": {
             "acceptedAt": "2026-09-19T20:09:27Z",
@@ -7105,6 +7105,6 @@
       }
     }
   },
-  "registryCommit": "07c3503f7237a5d92b182e6f770a2531a23dea58",
+  "registryCommit": "ba6c4492d881adeca3e3787c54e8a73fd20f4512",
   "schemaVersion": "omarchy-local-ai/recipes/1"
 }

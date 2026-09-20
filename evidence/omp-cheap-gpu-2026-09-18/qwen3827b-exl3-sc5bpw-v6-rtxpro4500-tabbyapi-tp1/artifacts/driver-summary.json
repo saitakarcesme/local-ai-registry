@@ -1,0 +1,12 @@
+{
+  "artifacts": "/Users/sero/local-registry/inference-index/campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+  "attempt": 1,
+  "elapsed_seconds": 195,
+  "slug": "rtx-pro-4500-blackwell-32gb-qwen38exl3-5bpw",
+  "steps": {
+    "accept": "accepted",
+    "probe": "ok",
+    "serve": "healthy",
+    "weights": "ok"
+  }
+}

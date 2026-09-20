@@ -1,0 +1,179 @@
+{
+  "copied_at": "2026-09-19T05:04:17.225392Z",
+  "files": [
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "acceptance.json",
+      "role": "other",
+      "sha256": "a5f4f9b35ce88b534f97a4874d8cd8ce0643bc8d3136d868e57ff1f1a1ae67f8",
+      "size_bytes": 1772
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "acceptance.log",
+      "role": "other",
+      "sha256": "a0aae51811d69972084cdf08e3f8038fffbbfbe146061ecd80edaa2ed16e4c8a",
+      "size_bytes": 1862
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "config.yml",
+      "role": "other",
+      "sha256": "db211a21e52f3a409d6d54e71cf9e184c5ca6cc24ea097bf55c2133bb7d5a9a3",
+      "size_bytes": 1018
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "driver-summary.json",
+      "role": "run_manifest",
+      "sha256": "bab19f0d5844b6c7b2f976836e526d6d69ef14781efec9398eaee545ecdd403b",
+      "size_bytes": 244
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "probe.json",
+      "role": "other",
+      "sha256": "4382f398cd39bd431f8c8646cd95f3b230e07ca95ff8d549aa76ee051e6a185e",
+      "size_bytes": 2899
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "serve.log",
+      "role": "other",
+      "sha256": "f3cd87007979cc931c2f375b30272533918789ef5d3161fe649d0083d9f37bcf",
+      "size_bytes": 20332
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "startup.log",
+      "role": "startup_log",
+      "sha256": "7761acce3b16b7b4159d277982e74acd350c2f56704c0f3c92c025a8c47e6912",
+      "size_bytes": 2514
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/manifest.json",
+      "role": "other",
+      "sha256": "52c5f5460bad4f305b596d8d38c1ca63e5778f5eb30fcacfd98a337c62025344",
+      "size_bytes": 15919
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c1-s1.jsonl",
+      "role": "raw",
+      "sha256": "162f168d1b0bf3c099926e86b338c3ed36fbfbad329731b8e14a8e304e959c68",
+      "size_bytes": 636
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c1-s2.jsonl",
+      "role": "raw",
+      "sha256": "5e33cd4e9dd2b8b91bef92a1a431a71feeac693a17bd980d0a72402d4f167b2b",
+      "size_bytes": 636
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c2-s1.jsonl",
+      "role": "raw",
+      "sha256": "622ad9857dad61fa4ea6b2a6dd6ca93a95d628847b2bcdf3c286a5390cbc3421",
+      "size_bytes": 1277
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c2-s2.jsonl",
+      "role": "raw",
+      "sha256": "c6450d3e8d60c7bcc44c1efbf13c0969473ac88ab739c005539569808f23b667",
+      "size_bytes": 1273
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c4-s1.jsonl",
+      "role": "raw",
+      "sha256": "9bb4bd2db64c81c4b77554a7eecec566fa18c299d48721a0198ff998be24428f",
+      "size_bytes": 1915
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t131072-c4-s2.jsonl",
+      "role": "raw",
+      "sha256": "01aa5da3b6824b4ce7d4eac3d83307c4f415fbe33b83af0e9c920477b6565afc",
+      "size_bytes": 1914
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c1-s1.jsonl",
+      "role": "raw",
+      "sha256": "1921cebbc303c36c59f9e97b85074c632edc10ed6118bc515edcc5efa2901bcf",
+      "size_bytes": 629
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c1-s2.jsonl",
+      "role": "raw",
+      "sha256": "2172bc423d00eb4e8f93e024595a9135ead138d3effb0ff889a0c7ed85fbf944",
+      "size_bytes": 633
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c2-s1.jsonl",
+      "role": "raw",
+      "sha256": "7b4679eacc561fd54fce0b8c820a5f1f73164f96191f9182fb9d9bf551d43022",
+      "size_bytes": 1269
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c2-s2.jsonl",
+      "role": "raw",
+      "sha256": "1d17658aeac4879ef47836d3967a382834d686a4fbeede1bdabf51b203583f5e",
+      "size_bytes": 1269
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c4-s1.jsonl",
+      "role": "raw",
+      "sha256": "6109e6f55676dab7c231d6bdbba3959bacd6e983fc597da0466522d1a330ebc5",
+      "size_bytes": 2538
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/raw/t32768-c4-s2.jsonl",
+      "role": "raw",
+      "sha256": "a90d76b2a2480cab32fe251d3d2731259486638f1f8ff973a4a6b45d6a54c606",
+      "size_bytes": 2536
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "sweep/rows.jsonl",
+      "role": "benchmark",
+      "sha256": "f6e7a2a6e0c061478833d0174a2bd5d88db88a5acc2bf48bf35740cb241b0099",
+      "size_bytes": 12800
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "telemetry.csv",
+      "role": "telemetry",
+      "sha256": "383a1ae480876ca076ce572edbcae4de8f8bdcf8bc942b4d5f9d17ff68f34e47",
+      "size_bytes": 673720
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "weights.json",
+      "role": "other",
+      "sha256": "1dda16748e34c4a3940162e7b13bda7356437e453b2d9e8bce1ad28e25016dae",
+      "size_bytes": 185
+    },
+    {
+      "pairing_id": "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw",
+      "path": "weights.log",
+      "role": "other",
+      "sha256": "9f2caba6c8dd932af6b5b5b0dac12b204cd9c666bcb6097cf2ac8c82290e35ef",
+      "size_bytes": 942
+    }
+  ],
+  "hardware_slug": "rtx-2000-ada-16gb-qwen38exl3-3bpw",
+  "pairing_ids": [
+    "cheap-rtx-2000-ada-16gb-qwen38exl3-3bpw"
+  ],
+  "pod_id": "3w8r1dzeo9fva8",
+  "schema_version": "inference-index/artifact-copy-v1"
+}

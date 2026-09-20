@@ -1,0 +1,19 @@
+huggingface_hub 1.31.0
+LOCAL_DIR /opt/models/Qwen3.8-27B-EXL3-SC5bpw-H6-V6
+BYTES 19584070793
+Warning: Permanently added '[[redacted-ip]]:12376' (ED25519) to the list of known hosts.
+
+Fetching 24 files:   0%|          | 0/24 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 24 files:   4%|▍         | 1/24 [00:00<00:05,  4.11it/s]
+Fetching 24 files:  12%|█▎        | 3/24 [00:00<00:02,  9.90it/s]
+Fetching 24 files:  29%|██▉       | 7/24 [00:00<00:00, 18.75it/s]
+Fetching 24 files:  42%|████▏     | 10/24 [00:00<00:00, 21.57it/s]
+Fetching 24 files:  54%|█████▍    | 13/24 [00:00<00:00, 15.77it/s]
+Fetching 24 files:  67%|██████▋   | 16/24 [00:01<00:00, 15.57it/s]
+Fetching 24 files:  75%|███████▌  | 18/24 [00:01<00:00, 13.78it/s]
+Fetching 24 files:  83%|████████▎ | 20/24 [00:01<00:00, 10.41it/s]
+Fetching 24 files:  92%|█████████▏| 22/24 [00:10<00:02,  1.30s/it]
+Fetching 24 files:  96%|█████████▌| 23/24 [00:18<00:02,  2.30s/it]
+Fetching 24 files: 100%|██████████| 24/24 [00:18<00:00,  1.95s/it]
+Fetching 24 files: 100%|██████████| 24/24 [00:18<00:00,  1.30it/s]

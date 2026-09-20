@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-09-18T17:55:38Z",
+  "tabbyapi_version": "0.0.1",
+  "tabbyapi_commit": "53da7919d4e45c63f4acbcbbc00cbe0f60a1ce65",
+  "exllamav3_version": "1.5.0",
+  "image": "ghcr.io/theroyallab/tabbyapi:cu13@sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
+  "raw": [
+    "17:52:51.001 INFO:     exllamav3 version: 1.5.0",
+    "Name: tabbyAPI",
+    "Version: 0.0.1",
+    "595.91.07, NVIDIA RTX PRO 4000 Blackwell, 24467 MiB"
+  ],
+  "startup_banner": [
+    "17:52:52.209 INFO:     Using main model MTP component for drafting",
+    "17:52:52.248 INFO:     Using tool format: qwen3_coder",
+    "17:52:52.208 INFO:     Keeping vision model weights in system RAM",
+    "17:52:52.210 INFO:     Context: max_seq_len 262,144 tokens (configured),"
+  ]
+}

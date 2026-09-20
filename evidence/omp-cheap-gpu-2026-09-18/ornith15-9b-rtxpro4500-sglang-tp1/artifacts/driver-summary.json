@@ -1,0 +1,9 @@
+{
+  "artifacts": "/Users/sero/local-registry/inference-index/campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+  "attempt": 1,
+  "elapsed_seconds": 1,
+  "slug": "rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+  "steps": {
+    "weights": "ok"
+  }
+}

@@ -7,7 +7,7 @@
     "inference_engine_version": null,
     "latest_point_at": "2026-09-19T12:19:04Z",
     "max_context_tokens": 262144,
-    "peak_generation_tps": 89.42,
+    "peak_generation_tps": null,
     "peak_memory_bytes": "25232932864",
     "peak_prompt_tps": 2116.109,
     "point_count": 13

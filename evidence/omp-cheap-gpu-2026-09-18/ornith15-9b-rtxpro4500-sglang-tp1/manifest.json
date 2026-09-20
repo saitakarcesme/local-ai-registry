@@ -1,0 +1,101 @@
+{
+  "file_count": 14,
+  "files": [
+    {
+      "bytes": 1715,
+      "path": "artifacts/acceptance.json",
+      "sha256": "bfc54992e314a20b95d9b0aa9528cf5e337ea049652db86da23144c48a04ba4d"
+    },
+    {
+      "bytes": 1805,
+      "path": "artifacts/acceptance.log",
+      "sha256": "d103ccf437885cdce761eb248faa377ae1e7fdbd5242b43af52a23fecc4dfeff"
+    },
+    {
+      "bytes": 3623,
+      "path": "artifacts/checksums.json",
+      "sha256": "5f82abb42c13efd6e33bdb113dc968713ed7babdb4d2bfbd0d58806ecaeb56ab"
+    },
+    {
+      "bytes": 293,
+      "path": "artifacts/driver-summary.json",
+      "sha256": "3641d5c4c160e22c5c56c190aa2949dce15f564fb32ceeb8ad1b330dbe318f4a"
+    },
+    {
+      "bytes": 2029,
+      "path": "artifacts/probe.json",
+      "sha256": "133e8ba22eafc806d8badae0d75b155bec90c1934663538a6217226f8431e3c7"
+    },
+    {
+      "bytes": 360,
+      "path": "artifacts/serve-argv.json",
+      "sha256": "b53662d9c5dadcb9a722b4bb133c28969b86e2a244a5e9181d84c743ee4a0a84"
+    },
+    {
+      "bytes": 9172,
+      "path": "artifacts/startup.log",
+      "sha256": "f3d548d92d411f40db6f6c1a65279804e43dd7f6ec3f71657999b15c79b73778"
+    },
+    {
+      "bytes": 89,
+      "path": "artifacts/sweep.log",
+      "sha256": "ddb76af8b8892a241f67fbffa8c94f7f8e09b34190e68a5e1cf8d2a7faa8c219"
+    },
+    {
+      "bytes": 40687,
+      "path": "artifacts/sweep/manifest.json",
+      "sha256": "bfbeef709c476048aa923c1ceb316cc777eaf2a3b777a3af561b4ae9c242be0d"
+    },
+    {
+      "bytes": 26376,
+      "path": "artifacts/sweep/rows.jsonl",
+      "sha256": "caf58f037b73eb731882e17a2e2daf7bc2264e784d7fb313631c06745cdff701"
+    },
+    {
+      "bytes": 4023,
+      "path": "artifacts/sweep/warm-shared-corpus.json",
+      "sha256": "ef0db8220920b237e0bbd9da7cb59996b56be50a3730cd70c3cf8e8c94f140e4"
+    },
+    {
+      "bytes": 206216,
+      "path": "artifacts/telemetry.csv",
+      "sha256": "86fdc40153e13ffb161d5955dfd7de0caeb9594136887dce4faf2b6c374b0999"
+    },
+    {
+      "bytes": 166,
+      "path": "artifacts/weights.json",
+      "sha256": "2e5a5a9660f885880cdf38ad9bd2a4843bc4b823ba4c5386fa86fe272edb2aea"
+    },
+    {
+      "bytes": 313,
+      "path": "artifacts/weights.log",
+      "sha256": "c13c9c3b1c6f93b1f450202167ae1d90d54205393f0a439b154c7c23114ee7b8"
+    }
+  ],
+  "generated_at": "2026-09-20T09:43:16Z",
+  "image_digest": "sha256:787461f889674cdd9339be2409a6e8b46ec2f5aac71669481c319f87c2beca13",
+  "label": "LEGACY / PROVISIONAL — pre-protocol-v2 campaign evidence, mirrored verbatim from an archived private repo. Benchmark metrics (throughput, MTP acceptance, concurrency) are DISPUTED and engine-reported/log-derived, not protocol-v2 verified. Functional acceptance (chat/reasoning/tools/vision) is the only verified capability claim.",
+  "model": {
+    "revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "served_name": "Ornith-1.5-9B",
+    "slug": null
+  },
+  "provenance": {
+    "note": "Origin repository is archived and private; this mirror is the publicly-resolvable copy. Original raw remains local and intact; it is not modified by this mirror.",
+    "origin_commit": "ba67444b9ab81f43f488d08d60c13069c98648df",
+    "origin_paths": [
+      "campaigns/omp-cheap-gpu-2026-09-18/artifacts/rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang"
+    ],
+    "origin_repository": "https://github.com/0xSero/inference-index"
+  },
+  "recipe_id": "ornith15-9b-rtxpro4500-sglang-tp1",
+  "redaction_audit": "Auditable scan (private IPv4, IP sockets, RunPod proxy hosts, SSH host keys, PEM private keys, bearer/authorization, api/secret/access tokens, hf_/RunPod API keys). Only matches were the server bind address 0.0.0.0:5000 and localhost 127.0.0.1, which are not sensitive. No credentials, keys, tokens, or private endpoints found; content mirrored byte-for-byte with zero redactions.",
+  "redactions": [],
+  "schema": "inference-index-evidence/v0-provisional",
+  "test_status": {
+    "benchmark_metrics": "disputed",
+    "functional_acceptance": "accepted",
+    "protocol_v2_verified": false
+  },
+  "total_bytes": 296867
+}

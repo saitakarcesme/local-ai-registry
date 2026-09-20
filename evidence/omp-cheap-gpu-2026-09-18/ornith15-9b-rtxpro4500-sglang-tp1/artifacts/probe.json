@@ -1,0 +1,67 @@
+{
+  "captured_at": "2026-09-19T17:50:58Z",
+  "engine": null,
+  "engine_stderr": "Warning: Permanently added '[[redacted-ip]]:27196' (ED25519) to the list of known hosts.\nbash: line 1: /opt/venv/bin/python3: No such file or directory",
+  "failed_probes": [],
+  "gpu": "NVIDIA RTX PRO 4500 Blackwell, GPU-256cbbb1-d3b6-a389-a4d2-fa28317c8380, 580.126.20, 32623 MiB, 12.0, 200.00 W",
+  "gpu_stderr": "Warning: Permanently added '[[redacted-ip]]:27196' (ED25519) to the list of known hosts.",
+  "host": {
+    "cpus": 112,
+    "disk_free_gb": 138.7,
+    "disk_total_gb": 161.1,
+    "ram_gb": 270.1
+  },
+  "host_stderr": "Warning: Permanently added '[[redacted-ip]]:27196' (ED25519) to the list of known hosts.",
+  "plan": {
+    "capabilities": {
+      "chat": true,
+      "reasoning": true,
+      "tools": true,
+      "vision": true
+    },
+    "context_tokens": 131072,
+    "engine": "sglang",
+    "hardware_id": "rtx-pro-4500-blackwell-32gb",
+    "log_path": "/opt/logs/serve.log",
+    "model_repo": "ornith-ai/Ornith-1.5-9B",
+    "model_revision": "489cb97981b8654bcfcf30ce1f94ed1b62e07b53",
+    "pairing_id": "cheap-rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+    "pkill_pattern": "sglang.launch_server",
+    "port": 30000,
+    "python": "/opt/sglang/bin/python3",
+    "remote_model_dir": "/opt/models/Ornith-1.5-9B",
+    "serve_argv": [
+      "/opt/sglang/bin/python3",
+      "-m",
+      "sglang.launch_server",
+      "--model-path",
+      "/opt/models/Ornith-1.5-9B",
+      "--served-model-name",
+      "Ornith-1.5-9B",
+      "--host",
+      "[redacted-ip]",
+      "--port",
+      "30000",
+      "--context-length",
+      "131072",
+      "--mem-fraction-static",
+      "0.85",
+      "--tool-call-parser",
+      "qwen3_coder",
+      "--reasoning-parser",
+      "qwen3"
+    ],
+    "served_name": "Ornith-1.5-9B",
+    "slug": "rtx-pro-4500-blackwell-32gb-ornith15-9b-sglang",
+    "sweep_concurrencies": [
+      1,
+      2,
+      4
+    ],
+    "sweep_contexts": [
+      32768,
+      131072
+    ],
+    "sweep_timeout": 7200
+  }
+}
