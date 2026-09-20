@@ -97,7 +97,15 @@
       "reason": "no draft model configured in this deploy image; the engine (sglang) supports speculative decoding but none is set here.",
       "status": "not-enabled"
     },
-    "provenance_note": "Owned-deploy-image candidate from campaign omp-cheap-gpu-2026-09-18 (DELIVERY-24 PKG-02 / R02). Legacy campaign details are provenance only; this record shares no validated badge or acceptance evidence with the corrected upstream-image recipes."
+    "provenance_note": "Owned-deploy-image candidate from campaign omp-cheap-gpu-2026-09-18 (DELIVERY-24 PKG-02 / R02). Legacy campaign details are provenance only; this record shares no validated badge or acceptance evidence with the corrected upstream-image recipes.",
+    "readiness_proof": {
+      "aggregate_verification": "Main independently fetched all 24 completed engine=proof logs 2026-09-20: every resolved digest is an exact match to the final inventory, 24 unique digests, 0 mismatches.",
+      "anon_layer_pull": "5/5 incl C1 full-fetch (small weights)",
+      "confers_no_runtime_badge": true,
+      "digest_verified": true,
+      "readiness_contract": "OMP_SSH_FIRST + /opt/omp-acquire (sshd-first; blocking fail-closed acquire; .omp-ready pins the revision)",
+      "type": "engine=proof (CPU-proof readiness discharge; NOT runtime inference)"
+    }
   },
   "model_instance_id": "openbmb-minicpm5-2b-gptq--awq-4bit",
   "provenance": {
