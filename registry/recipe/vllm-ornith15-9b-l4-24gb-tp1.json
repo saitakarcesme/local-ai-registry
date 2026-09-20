@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 8000,
     "host_port": 8000,
-    "image": "ghcr.io/0xsero/deploy-vllm-ornith15-9b-l4-24gb@sha256:38781aac6fa240567534f9b8eb5f484582e4ec4d1a011e755e77e5321da830de",
+    "image": "ghcr.io/0xsero/deploy-vllm-ornith15-9b-l4-24gb@sha256:8b6e8581ada163c9db363f525f74857ebee9d618dfa220b3341ae49b4da3eeba",
     "ipc": "host",
     "kind": "docker",
     "mounts": [
@@ -74,7 +74,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:38781aac6fa240567534f9b8eb5f484582e4ec4d1a011e755e77e5321da830de",
+      "digest": "sha256:8b6e8581ada163c9db363f525f74857ebee9d618dfa220b3341ae49b4da3eeba",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "vllm-openai",
       "engine_base_digest": "sha256:1de88ff218282ce71da7811f62ea527556648e1ad05dd36e5fc82d0f9ff07424",
       "owner": "0xSero",

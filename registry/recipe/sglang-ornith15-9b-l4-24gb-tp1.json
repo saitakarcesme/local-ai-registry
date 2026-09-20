@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 30000,
     "host_port": 30000,
-    "image": "ghcr.io/0xsero/deploy-sglang-ornith15-9b-l4-24gb@sha256:9322d5fce3b8bc2f3c9cbc6ab731e3cbd8f634011579b6a175a8e1fa59cf2566",
+    "image": "ghcr.io/0xsero/deploy-sglang-ornith15-9b-l4-24gb@sha256:d7b64265dbeb3391213071aa393ff7693c1551b4bf4a43bb005193722b39d175",
     "kind": "docker",
     "mounts": [
       {
@@ -73,7 +73,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:9322d5fce3b8bc2f3c9cbc6ab731e3cbd8f634011579b6a175a8e1fa59cf2566",
+      "digest": "sha256:d7b64265dbeb3391213071aa393ff7693c1551b4bf4a43bb005193722b39d175",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "sglang",
       "engine_base_digest": "sha256:787461f889674cdd9339be2409a6e8b46ec2f5aac71669481c319f87c2beca13",
       "owner": "0xSero",

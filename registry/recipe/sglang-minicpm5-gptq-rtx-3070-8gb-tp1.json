@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 30000,
     "host_port": 30000,
-    "image": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3070-8gb@sha256:3a28ab95ecf52c22c55e7b2c418c0f2484ce6e35ac64899cf610880ec56facf4",
+    "image": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3070-8gb@sha256:679c805d42ff43e544d8a7aee8faf6902b1f15117c0ec8db1f68fda04c1fb221",
     "kind": "docker",
     "mounts": [
       {
@@ -74,7 +74,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:3a28ab95ecf52c22c55e7b2c418c0f2484ce6e35ac64899cf610880ec56facf4",
+      "digest": "sha256:679c805d42ff43e544d8a7aee8faf6902b1f15117c0ec8db1f68fda04c1fb221",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "sglang",
       "engine_base_digest": "sha256:787461f889674cdd9339be2409a6e8b46ec2f5aac71669481c319f87c2beca13",
       "owner": "0xSero",

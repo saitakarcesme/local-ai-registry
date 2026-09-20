@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 30000,
     "host_port": 30000,
-    "image": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3080-ti-12gb@sha256:abcd624f93c06e400e170219822c87a4a173121cb424ed0fda29b1b2ff3f19a3",
+    "image": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3080-ti-12gb@sha256:789a1eea0acbc01b88f005403ad93fedf1f532ed8736686ca3d34e5d35c46aff",
     "kind": "docker",
     "mounts": [
       {
@@ -68,7 +68,7 @@
       "does_not_confer": "No validated badge. This recipe stays status=candidate. The canonical 12 GB RTX 3080 Ti target is UNTESTED; no 16 GB validated recipe is created. Full-window (131072) serving is not demonstrated.",
       "evidence": "evidence/omp-cheap-gpu-2026-09-18/calibrations/rtx-2000-ada-16gb-minicpm5-2b-attempt3/ (sanitized, manifest + redaction ledger; raw remains local)",
       "image_calibrated": "ghcr.io/0xsero/deploy-sglang-minicpm5-gptq-rtx-3080-ti-12gb@sha256:e54fe5ddd1365780ade3dffaa02ec8bc7a9f31ae5e79d79835e1dee7da313de8",
-      "image_repin_pending": "the recipe's draft_launch.image still pins the pre-fix digest; the atomic repin to the entrypoint-fixed set is coordinated with ImageDelivery and not applied here",
+      "image_repin_pending": "RESOLVED: draft_launch.image repinned to the final full-warm 789a1eea in the atomic v2 update. The calibration EVIDENCE remains recorded at e54fe5dd (the image that actually ran the calibration).",
       "kind": "retarget-short-capability",
       "ran_on_hardware": "rtx-2000-ada-16gb (RETARGET; this package's canonical target is rtx-3080-ti-12gb)",
       "recorded": "2026-09-20 per Main",
@@ -91,7 +91,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:abcd624f93c06e400e170219822c87a4a173121cb424ed0fda29b1b2ff3f19a3",
+      "digest": "sha256:789a1eea0acbc01b88f005403ad93fedf1f532ed8736686ca3d34e5d35c46aff",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "sglang",
       "engine_base_digest": "sha256:787461f889674cdd9339be2409a6e8b46ec2f5aac71669481c319f87c2beca13",
       "owner": "0xSero",

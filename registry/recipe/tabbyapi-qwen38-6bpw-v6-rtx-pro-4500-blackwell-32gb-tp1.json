@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 5000,
     "host_port": 5000,
-    "image": "ghcr.io/0xsero/deploy-pkg-22-tabbyapi-qwen38-6bpw-v6@sha256:5256e5f5aa9e3b3821382f66523a4c69acb47204219026fa1bb2fcaeb49eb0f9",
+    "image": "ghcr.io/0xsero/deploy-pkg-22-tabbyapi-qwen38-6bpw-v6@sha256:3c69e4af043bb009f9ddfb539070cd84946a8254e4cded92d04409f15f5ab408",
     "kind": "docker",
     "mounts": [
       {
@@ -73,7 +73,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.2",
-      "digest": "sha256:5256e5f5aa9e3b3821382f66523a4c69acb47204219026fa1bb2fcaeb49eb0f9",
+      "digest": "sha256:3c69e4af043bb009f9ddfb539070cd84946a8254e4cded92d04409f15f5ab408",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "tabbyapi-cu13-upstream",
       "engine_base_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
       "owner": "0xSero",

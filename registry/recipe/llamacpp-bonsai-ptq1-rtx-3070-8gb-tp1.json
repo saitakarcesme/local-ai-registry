@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 8080,
     "host_port": 8080,
-    "image": "ghcr.io/0xsero/deploy-llamacpp-bonsai-ptq1-rtx-3070-8gb@sha256:d4775ac346a994aec892b0adab57aac4319ba21e59c5c19492f648c01eb6b429",
+    "image": "ghcr.io/0xsero/deploy-llamacpp-bonsai-ptq1-rtx-3070-8gb@sha256:85ac46d89c01a035b46d6ae5a3c619eaaa85cfa1e981d84da10b850bbd0910a8",
     "kind": "docker",
     "mounts": [
       {
@@ -74,7 +74,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "12.8",
-      "digest": "sha256:d4775ac346a994aec892b0adab57aac4319ba21e59c5c19492f648c01eb6b429",
+      "digest": "sha256:85ac46d89c01a035b46d6ae5a3c619eaaa85cfa1e981d84da10b850bbd0910a8",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "llamacpp-prism",
       "engine_base_digest": "sha256:d9efaf72a177156667879c795217f5e98a6041930ddb29778399edc1ef57b33c",
       "owner": "0xSero",

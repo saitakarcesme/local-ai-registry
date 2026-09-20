@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 30000,
     "host_port": 30000,
-    "image": "ghcr.io/0xsero/deploy-pkg-24-sglang-qwen38-awq-int4@sha256:d7035ee632474b524bf9184f159244320cc42ea8bfa51fdfa460bd0ead765522",
+    "image": "ghcr.io/0xsero/deploy-pkg-24-sglang-qwen38-awq-int4@sha256:0972556fd4ad39debe291fe2fd45dcb72eb37cb9c77f9d98ca2a3c2808df7462",
     "kind": "docker",
     "mounts": [
       {
@@ -74,7 +74,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:d7035ee632474b524bf9184f159244320cc42ea8bfa51fdfa460bd0ead765522",
+      "digest": "sha256:0972556fd4ad39debe291fe2fd45dcb72eb37cb9c77f9d98ca2a3c2808df7462",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "sglang",
       "engine_base_digest": "sha256:787461f889674cdd9339be2409a6e8b46ec2f5aac71669481c319f87c2beca13",
       "owner": "0xSero",

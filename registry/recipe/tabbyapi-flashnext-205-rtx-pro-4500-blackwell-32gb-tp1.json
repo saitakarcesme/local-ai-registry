@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 5000,
     "host_port": 5000,
-    "image": "ghcr.io/0xsero/deploy-tabbyapi-flashnext-205-rtx-pro-4500-blackwell-32gb@sha256:8a4ce428d154fee0dc2dfa18ccfd2e4473c9309c9384606df3852c60e0cadedd",
+    "image": "ghcr.io/0xsero/deploy-tabbyapi-flashnext-205-rtx-pro-4500-blackwell-32gb@sha256:77aa2ea174062313a7d36bcb45ecc81b11932d88166e59f105ac24f771521e79",
     "kind": "docker",
     "mounts": [
       {
@@ -73,7 +73,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.2",
-      "digest": "sha256:8a4ce428d154fee0dc2dfa18ccfd2e4473c9309c9384606df3852c60e0cadedd",
+      "digest": "sha256:77aa2ea174062313a7d36bcb45ecc81b11932d88166e59f105ac24f771521e79",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "tabbyapi-cu13-upstream",
       "engine_base_digest": "sha256:1c13dd17416660856e9962aeee8498827f0acd604eb36795128a03ddfe03c6ef",
       "owner": "0xSero",

@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 8000,
     "host_port": 8000,
-    "image": "ghcr.io/0xsero/deploy-vllm-minicpm5-gptq-rtx-3070-8gb@sha256:9c469526c02b221b69ee8760c7fbc45ddd18392dbaa1c2385a61a14a72c5689e",
+    "image": "ghcr.io/0xsero/deploy-vllm-minicpm5-gptq-rtx-3070-8gb@sha256:30e44484ec079dc92cf85b98157a94ecb6a2f6463939e4a0946b562d59c33aaf",
     "ipc": "host",
     "kind": "docker",
     "mounts": [
@@ -75,11 +75,11 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:9c469526c02b221b69ee8760c7fbc45ddd18392dbaa1c2385a61a14a72c5689e",
+      "digest": "sha256:30e44484ec079dc92cf85b98157a94ecb6a2f6463939e4a0946b562d59c33aaf",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "vllm-openai",
       "engine_base_digest": "sha256:1de88ff218282ce71da7811f62ea527556648e1ad05dd36e5fc82d0f9ff07424",
       "owner": "0xSero",
-      "rebuild_note": "digest updated 2026-09-20 after a label-fix rebuild so the OCI .config.Cmd (authoritative) matches the pinned_startup label; content-runnable unchanged; tools still engine-unsupported/null pending parser dump.",
       "status": "build/config-source-verified only (manifest-resolvable anonymously, HTTP 200, no layers pulled); NO verified inference; protocol-3.12 full anonymous amd64 layer pull outstanding"
     },
     "draft_launch_note": "UNVERIFIED draft. The owned deploy image bakes engine+pinned serve config into its ENTRYPOINT/CMD (effective command comes from the image config, NOT the stale DELIVERY-24 pinned_startup snippet). Weights are NOT baked: the ENTRYPOINT preflight self-fetches the pinned model revision into /opt/models/<name> (blocking, .omp-ready marker) at first launch; the ${MODEL_ROOT}->/opt/models mount is an optional persistent cache. No verified inference.",

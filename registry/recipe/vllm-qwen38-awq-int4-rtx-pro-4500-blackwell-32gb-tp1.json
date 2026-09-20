@@ -11,7 +11,7 @@
     "arguments": [],
     "container_port": 8000,
     "host_port": 8000,
-    "image": "ghcr.io/0xsero/deploy-pkg-23-vllm-qwen38-awq-int4@sha256:dd123a1c369e7308b13c561c7335c8304497850ab8ca861c32a1f1a602327d4f",
+    "image": "ghcr.io/0xsero/deploy-pkg-23-vllm-qwen38-awq-int4@sha256:e932762d2edf356d61f0dff67fa1044d88bfedb4deaadcc3f2f1b07ff70ee44f",
     "ipc": "host",
     "kind": "docker",
     "mounts": [
@@ -75,7 +75,8 @@
     },
     "deploy_image": {
       "cuda_floor_ge": "13.0",
-      "digest": "sha256:dd123a1c369e7308b13c561c7335c8304497850ab8ca861c32a1f1a602327d4f",
+      "digest": "sha256:e932762d2edf356d61f0dff67fa1044d88bfedb4deaadcc3f2f1b07ff70ee44f",
+      "digest_version": "v2 (OMP_SSH_FIRST + /opt/omp-acquire readiness contract, 2026-09-20; per-package engine=proof readiness landed). Supersedes the pre-fix and interim digests.",
       "engine_base": "vllm-openai",
       "engine_base_digest": "sha256:1de88ff218282ce71da7811f62ea527556648e1ad05dd36e5fc82d0f9ff07424",
       "owner": "0xSero",
